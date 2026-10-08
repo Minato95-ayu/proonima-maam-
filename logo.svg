@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="17" fill="#ff2e93"/>
+  <path d="M13 43V21c7-3 13-2 19 2 6-4 12-5 19-2v22c-7-3-13-2-19 2-6-4-12-5-19-2Z" fill="#fff"/>
+  <path d="M32 23v20" fill="none" stroke="#d6106f" stroke-linecap="round" stroke-width="2"/>
+  <text x="32" y="37" fill="#0d0d0d" font-family="'Noto Sans Devanagari',sans-serif" font-size="18" font-weight="800" text-anchor="middle">हि</text>
+  <path d="M20 48h24" fill="none" stroke="#0d0d0d" stroke-linecap="round" stroke-width="3"/>
+</svg>
