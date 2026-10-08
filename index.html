@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Proonima Misra | Online Hindi Tutor for NRI & International Kids</title>
 <meta name="description" content="One-on-one online Hindi classes for NRI and international children, taught by Proonima Misra, with 10+ years of teaching experience.">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@600;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@600;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@600;800&display=swap"></noscript>
 <style>
 :root{--pk:#ff2e93;--pk2:#d6106f;--soft:#ffe6f2;--ink:#0d0d0d;--ink2:#1a1a1a;--w:#fff;--mute:#6b6b6b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box;margin:0}
@@ -244,6 +247,7 @@ footer{background:var(--ink);color:#999;padding:30px 0;text-align:center;font-si
 @keyframes ta{0%,45%{opacity:1}50%,95%{opacity:0}100%{opacity:1}}
 @keyframes tb{0%,45%{opacity:0}50%,95%{opacity:1}100%{opacity:0}}
 .sn.off *,.sn.off svg{animation-play-state:paused!important}
+@media(max-width:760px){.sn svg,.sn svg *{animation:none!important}.sn .px{transform:none!important;transition:none!important}}
 .pln{padding:12px 16px;border-radius:14px;margin-bottom:8px;border:2px solid transparent;transition:.25s;cursor:pointer}
 .pln b{display:block;font:800 1.5rem/1.4 'Noto Sans Devanagari'}
 .pm{display:none;color:var(--mute);font-size:.85rem}
@@ -723,14 +727,26 @@ book:function(){return S6(T(60,49,.85,"aw")+K(450,121,.85,IN,"raise")+'<g class=
 /*ENDSCN*/
 
 var snAll=document.querySelectorAll(".sn");
-snAll.forEach(function(el){
+var sceneHover=window.matchMedia("(hover: hover) and (pointer: fine)");
+function renderScene(el){
+ if(el.dataset.rendered)return;
  var f=SCN[el.dataset.s];if(!f)return;var o=f();
- el.classList.add("off");
  el.innerHTML='<div class="si"><svg viewBox="'+o[0]+'" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Animated illustration of the Hindi teacher">'+o[1]+'</svg></div>';
- el.addEventListener("pointermove",function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.setProperty("--mx",x*2);el.style.setProperty("--my",y*2);el.style.setProperty("--ry",(x*12)+"deg");el.style.setProperty("--rx",(-y*9)+"deg")});
- el.addEventListener("pointerleave",function(){["--mx","--my","--ry","--rx"].forEach(function(p){el.style.removeProperty(p)})});
-});
-if("IntersectionObserver" in window){var io2=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle("off",!e.isIntersecting)})},{threshold:.1});snAll.forEach(function(el){io2.observe(el)})}else snAll.forEach(function(el){el.classList.remove("off")});
+ el.dataset.rendered="true";
+ if(sceneHover.matches){
+  el.addEventListener("pointermove",function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.setProperty("--mx",x*2);el.style.setProperty("--my",y*2);el.style.setProperty("--ry",(x*12)+"deg");el.style.setProperty("--rx",(-y*9)+"deg")});
+  el.addEventListener("pointerleave",function(){["--mx","--my","--ry","--rx"].forEach(function(p){el.style.removeProperty(p)})});
+ }
+}
+if("IntersectionObserver" in window){
+ var io2=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){renderScene(e.target);e.target.classList.remove("off")}
+  else e.target.classList.add("off");
+ })},{rootMargin:"240px 0px",threshold:0});
+ snAll.forEach(function(el){el.classList.add("off");io2.observe(el)});
+ var heroScene=document.querySelector(".sn[data-s='hero']");
+ if(heroScene){renderScene(heroScene);heroScene.classList.remove("off")}
+}else snAll.forEach(renderScene);
 
 var PO=[["सूरज उगा, सवेरा आया,","suraj uga, savera aaya,","The sun rose, the morning came,"],["चिड़िया ने गीत सुनाया।","chidiya ne geet sunaya.","The little bird sang a song."],["अ से अनार, आ से आम,","a se anaar, aa se aam,","A is for pomegranate, Aa is for mango,"],["हिंदी सीखना है आसान।","Hindi seekhna hai aasaan.","Learning Hindi is easy."]];
 var pl=document.getElementById("pl"),pb=document.getElementById("pbtn"),pt=null,ph="";
