@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proonima Misra | Online Hindi Tutor for NRI & International Kids</title>
+<meta name="description" content="One-on-one online Hindi classes for NRI and international children, taught by Proonima Misra, with 10+ years of teaching experience.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--pk:#ff2e93;--pk2:#d6106f;--soft:#ffe6f2;--ink:#0d0d0d;--ink2:#1a1a1a;--w:#fff;--mute:#6b6b6b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px;height:auto}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--w);color:var(--ink);line-height:1.6;overflow-x:hidden}
+.wrap{max-width:1080px;margin:auto;padding:0 20px;position:relative}
+section{padding:72px 0}
+.dk{background:var(--ink);color:var(--w)}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+h2{font-size:clamp(1.7rem,4.5vw,2.6rem);font-weight:800;margin-bottom:10px}
+h2 i{font-style:normal;color:var(--pk)}
+.sub{color:var(--mute);margin-bottom:34px;max-width:560px}
+.dk .sub{color:#b5b5b5}
+.hi{font-family:'Noto Sans Devanagari',sans-serif}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,13,13,.9);backdrop-filter:blur(12px);border-bottom:1px solid #2a2a2a}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-weight:700;color:var(--w);display:flex;align-items:center;gap:11px;line-height:1.15}
+.logo small{display:block;font-size:.62rem;letter-spacing:.18em;color:var(--pk);font-weight:600}
+.gl{display:inline-flex;width:56px;height:56px;border-radius:16px;background:var(--pk);color:#fff;font:800 1.45rem 'Noto Sans Devanagari';align-items:center;justify-content:center}
+.bc:hover .gl{background:var(--ink)}
+.fb button{display:inline-flex;align-items:center;gap:6px}
+.links{display:flex;gap:22px;align-items:center;font-size:.88rem}
+.links a{color:#ddd;text-decoration:none}
+.links a:hover{color:var(--pk)}
+@media(max-width:760px){.links a.h{display:none}}
+.btn{display:inline-block;background:var(--pk);color:#fff;border:2px solid var(--pk);padding:13px 26px;border-radius:999px;font:700 .95rem Poppins;cursor:pointer;text-decoration:none;transition:.25s}
+.btn:hover{background:var(--w);color:var(--pk);transform:translateY(-3px);box-shadow:0 10px 24px rgba(255,46,147,.35)}
+.btn.o{background:transparent;color:var(--w);border-color:#fff}
+.btn.o:hover{background:var(--w);color:var(--ink)}
+.btn.k{background:var(--ink);border-color:var(--ink)}
+.btn.k:hover{background:var(--w);color:var(--ink)}
+/* hero */
+.hero{background:var(--ink);color:#fff;padding:60px 0 80px;overflow:hidden;position:relative}
+.big{position:absolute;right:-30px;top:10px;font:800 clamp(10rem,28vw,22rem)/1 'Noto Sans Devanagari';color:transparent;-webkit-text-stroke:2px rgba(255,46,147,.35);pointer-events:none;user-select:none}
+.fl{position:absolute;font:800 2.2rem 'Noto Sans Devanagari';color:var(--pk);opacity:.5;animation:fy 6s ease-in-out infinite}
+@keyframes fy{50%{transform:translateY(-18px) rotate(6deg)}}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}}
+.tag{display:inline-block;border:1px solid var(--pk);color:var(--pk);padding:5px 14px;border-radius:999px;font-size:.78rem;font-weight:600;margin-bottom:18px}
+.hero h1{font-size:clamp(2.2rem,6.5vw,4rem);font-weight:800;margin-bottom:16px}
+.hero h1 em{font-style:normal;background:var(--pk);padding:0 12px;border-radius:12px;display:inline-block;transform:rotate(-2deg)}
+.hero p{color:#c8c8c8;max-width:500px;margin-bottom:26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.pc{background:var(--w);color:var(--ink);border-radius:28px;padding:26px;text-align:center;position:relative;box-shadow:12px 12px 0 var(--pk)}
+.av{width:140px;height:140px;border-radius:50%;margin:0 auto 14px;background:var(--ink);color:var(--pk);font:800 2.6rem Poppins;display:flex;align-items:center;justify-content:center;border:5px solid var(--pk);overflow:hidden}
+.av img{width:100%;height:100%;object-fit:cover}
+.pc small{color:var(--mute)}
+.st{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+.st div{background:var(--soft);border-radius:14px;padding:10px 2px}
+.st b{display:block;color:var(--pk2);font-size:1.25rem}
+.st span{font-size:.68rem;color:var(--mute)}
+.chip{position:absolute;background:var(--ink);color:#fff;font-size:.72rem;font-weight:600;padding:6px 12px;border-radius:999px;border:2px solid var(--pk)}
+/* marquee */
+.mq{background:var(--pk);color:var(--ink);overflow:hidden;white-space:nowrap;padding:14px 0;font:800 1.3rem 'Noto Sans Devanagari'}
+.mq div{display:inline-block;animation:mv 26s linear infinite}
+@keyframes mv{to{transform:translateX(-50%)}}
+.mq span{margin:0 22px}
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:860px){.bento{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.bento{grid-template-columns:1fr}}
+.bc{border:2px solid var(--ink);border-radius:22px;padding:22px;transition:.3s;background:var(--w)}
+.bc:nth-child(1){grid-column:span 2;background:var(--ink);color:#fff}
+.bc:nth-child(1) p{color:#bbb}
+.bc:hover{background:var(--pk);border-color:var(--pk);color:#fff;transform:translateY(-6px) rotate(-1deg)}
+.bc:hover p{color:#fff}
+.bc .e{font-size:2rem}
+.bc h3{margin:8px 0 6px}
+.bc p{font-size:.88rem;color:var(--mute)}
+@media(max-width:520px){.bc:nth-child(1){grid-column:auto}}
+/* boxes */
+.box{background:var(--w);color:var(--ink);border-radius:26px;padding:28px}
+.opts{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 22px}
+.opt{background:var(--w);border:2px solid var(--ink);color:var(--ink);padding:10px 18px;border-radius:999px;font:600 .86rem Poppins;cursor:pointer;transition:.2s}
+.opt:hover{border-color:var(--pk);color:var(--pk)}
+.opt.on{background:var(--pk);border-color:var(--pk);color:#fff}
+.res{display:none;padding:18px;border-radius:16px;background:var(--ink);color:#fff}
+.res.show{display:block;animation:pop .45s}
+.res p{color:#bbb;margin:6px 0 14px}
+@keyframes pop{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.flips{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:14px}
+.fc{perspective:800px;height:165px;cursor:pointer}
+.fi{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.fc.on .fi{transform:rotateY(180deg)}
+.fa,.fb{position:absolute;inset:0;backface-visibility:hidden;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8px}
+.fa{background:var(--ink);color:var(--pk)}
+.fa .g{font:800 3.6rem 'Noto Sans Devanagari'}
+.fa small{color:#aaa}
+.fb{background:var(--pk);color:#fff;transform:rotateY(180deg)}
+.fb .w{font:800 1.6rem 'Noto Sans Devanagari'}
+.fb button{margin-top:8px;background:#fff;color:var(--pk2);border:0;border-radius:999px;padding:4px 14px;font-weight:700;cursor:pointer}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.step{padding:6px 0}
+.step .n{font:800 4rem/1 Poppins;color:var(--pk);opacity:.9}
+.step h3{margin:4px 0}
+.step p{color:var(--mute);font-size:.9rem}
+select,input{width:100%;padding:14px 16px;border-radius:14px;border:2px solid #e3e3e3;background:#fff;color:var(--ink);font:500 .92rem Poppins;margin-bottom:12px}
+select:focus,input:focus{outline:0;border-color:var(--pk)}
+.slots{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.slot{background:var(--ink);color:#fff;border-radius:14px;padding:10px 16px;font-weight:700}
+.slot small{display:block;font-weight:400;color:#ff9acb;font-size:.7rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+@media(max-width:600px){.two{grid-template-columns:1fr}}
+details{border:2px solid var(--ink);border-radius:16px;padding:16px 20px;margin-bottom:12px;transition:.2s}
+details[open]{background:var(--soft);border-color:var(--pk)}
+summary{cursor:pointer;font-weight:700}
+details p{margin-top:8px;color:#444;font-size:.92rem}
+.vg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.vid{aspect-ratio:16/9;border:2px dashed var(--pk);border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--pk);font-weight:600;font-size:.85rem;padding:12px}
+.pinks{background:var(--pk);color:#fff}
+.pinks .sub{color:#fff}
+.pinks h2 i{color:var(--ink)}
+footer{background:var(--ink);color:#999;padding:30px 0;text-align:center;font-size:.85rem}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:#25d366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem;text-decoration:none;box-shadow:0 8px 22px #0006;animation:pl 2.4s infinite}
+@keyframes pl{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+
+.ab{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center}
+@media(max-width:820px){.ab{grid-template-columns:1fr}}
+.abv{background:var(--ink);border-radius:28px;padding:28px;box-shadow:10px 10px 0 var(--pk)}
+.abv svg{width:100%;height:auto;display:block}
+.ul{list-style:none;padding:0;margin:18px 0 22px}
+.ul li{display:flex;gap:10px;margin-bottom:9px;font-size:.95rem}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.nts{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:12px}
+.nts.wide{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.nt{background:var(--w);border:2px solid var(--ink);border-radius:16px;padding:14px 8px;text-align:center;cursor:pointer;transition:.2s;font-family:inherit;color:var(--ink)}
+.nt:hover,.nt:focus-visible{background:var(--pk);border-color:var(--pk);color:#fff;transform:translateY(-4px);outline:0}
+.nt b{display:block;font:800 1.7rem/1.3 'Noto Sans Devanagari'}
+.nt.w b{font-size:1.25rem}
+.nt span{display:block;font-size:.8rem;opacity:.85}
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.tp{border:2px solid var(--ink);border-radius:22px;padding:18px;background:var(--w)}
+.tp svg{width:100%;height:96px;margin-bottom:10px}
+.tp h3{font-size:1rem;margin-bottom:4px}
+.tp p{font-size:.85rem;color:var(--mute)}
+.pl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.pl div{border-left:4px solid var(--pk);padding-left:16px}
+.pl small{color:var(--pk);font-weight:700;letter-spacing:.12em;font-size:.72rem}
+.pl h3{margin:4px 0}
+.pl p{color:#bbb;font-size:.88rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.cov,.tb{display:none}}
+
+.bc{cursor:pointer}
+.lm{display:block;margin-top:12px;font-weight:700;font-size:.82rem}
+.qh{display:flex;justify-content:space-between;font-size:.8rem;font-weight:700;margin-bottom:8px}
+.qh .lv{background:var(--pk);color:#fff;border-radius:999px;padding:2px 12px}
+.qbar{height:8px;background:#eee;border-radius:9px;overflow:hidden;margin-bottom:20px}
+.qbar i{display:block;height:100%;background:var(--pk);transition:width .4s}
+.qq{font-weight:700;margin-bottom:6px}
+.qd{font:800 2.2rem/1.3 'Noto Sans Devanagari';margin-bottom:16px;word-break:break-word}
+.qd.en{font:700 1.4rem/1.3 Poppins}
+.qo{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:560px){.qo{grid-template-columns:1fr}}
+.qb{background:#fff;border:2px solid var(--ink);color:var(--ink);border-radius:14px;padding:13px 14px;font:600 .95rem 'Noto Sans Devanagari',Poppins,sans-serif;text-align:left;cursor:pointer;transition:.15s}
+.qb:hover:not(:disabled){border-color:var(--pk);color:var(--pk)}
+.qb.ok{background:#e6f6ec;border-color:#17803d;color:#0f5c2b}
+.qb.no{background:#fde8ee;border-color:#c4123f;color:#8f0c2d}
+.rl{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:.85rem}
+.rl b{width:110px;flex:none}
+.rl div{flex:1;height:12px;background:#eee;border-radius:9px;overflow:hidden}
+.rl i{display:block;height:100%;background:var(--pk)}
+.rv2{max-height:210px;overflow:auto;margin:12px 0;font-size:.85rem;border-top:1px solid #eee}
+.rv2 p{padding:7px 0;border-bottom:1px solid #eee}
+.sc{font:800 3rem/1 Poppins;color:var(--pk)}
+.ch{display:inline-block;padding:4px 12px;border-radius:999px;background:var(--soft);color:var(--pk2);font-size:.78rem;font-weight:600;margin:3px 4px 3px 0}
+.ch.k{background:#fff;border:1.5px solid var(--ink);color:var(--ink)}
+.cp h3{font-size:1.4rem;margin-bottom:6px}
+.cp h4{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--pk2);margin:14px 0 4px}
+.cp p{color:#444;font-size:.93rem}
+.md{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:60;display:none;align-items:center;justify-content:center;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px))}
+.md.open{display:flex}
+.mb{background:#fff;color:var(--ink);border-radius:26px;max-width:580px;width:100%;max-height:100%;overflow:auto;padding:28px;position:relative;border-top:8px solid var(--pk);animation:pop .3s}
+.mb h3{font-size:1.5rem;margin:8px 0 2px}
+.mb h4{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--pk2);margin:16px 0 6px}
+.mb p,.mb li{font-size:.92rem;color:#444}
+.mb ul{padding-left:20px}
+.mx{position:absolute;right:14px;top:14px;width:36px;height:36px;border-radius:50%;border:2px solid var(--ink);background:#fff;font-size:1.2rem;cursor:pointer;line-height:1}
+.exg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+@media(max-width:480px){.exg{grid-template-columns:1fr}}
+.exg div{background:var(--soft);border-radius:12px;padding:10px;text-align:center}
+.exg b{display:block;font:800 1.2rem 'Noto Sans Devanagari'}
+.exg span{display:block;font-size:.75rem;color:#555}
+
+.sn{position:relative;border:3px solid var(--ink);border-radius:28px;overflow:hidden;aspect-ratio:5/2;margin-bottom:36px;box-shadow:8px 8px 0 var(--pk);perspective:1000px;background:#ffe6f2}
+.sn.tall{aspect-ratio:6/5;margin-bottom:0;border-color:#fff}
+.hero .sn{box-shadow:10px 10px 0 var(--pk)}
+.si{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .2s}
+.sn svg{position:absolute;inset:0;width:100%;height:100%;animation:sw 9s ease-in-out infinite alternate}
+@keyframes sw{from{transform:rotateY(-2.5deg)}to{transform:rotateY(2.5deg)}}
+.sn text{font-family:'Noto Sans Devanagari',Poppins,sans-serif;font-weight:800}
+.px{transform:translate(calc(var(--mx,0)*var(--d,0)*1px),calc(var(--my,0)*var(--d,0)*.6px));transition:transform .2s}
+.fy,.tw,.bl,.mo,.sp,.gr,.cov,.rg,.nt2,.fly,.mer,.ld,.sw2{transform-box:fill-box;transform-origin:center}
+.pp{transform-box:fill-box;transform-origin:50% 100%}
+.fy{animation:fy 5s ease-in-out infinite}
+.pp{animation:pp 5s ease-in-out infinite}
+.tw{animation:tw 2.4s ease-in-out infinite}
+.bl{animation:bl 4s infinite}
+.mo{animation:mo .4s ease-in-out infinite alternate}
+.sp{animation:sp 8s linear infinite}
+.gr{transform-origin:0 50%;animation:gr 7s ease-in-out infinite}
+.cov{transform-origin:100% 50%;animation:cv 6s ease-in-out infinite}
+.rg{animation:rg 2.2s ease-out infinite}
+.nt2{animation:nt2 4s ease-out infinite}
+.fly{animation:fly 4s ease-in-out infinite}
+.mer{animation:mer 6s ease-in-out infinite alternate}
+.ld{animation:ld 14s linear infinite}
+.sw2{animation:s2 1s ease-in-out infinite}
+.aw{animation:wv 1.1s ease-in-out infinite alternate}
+.ap{animation:pt 1.6s ease-in-out infinite alternate}
+.ak{animation:wr .45s ease-in-out infinite alternate}
+.kw{animation:kw .5s ease-in-out infinite alternate}
+.ah{transform:rotate(-50deg)}
+.hb{animation:hb 2.6s ease-in-out infinite}
+.ta{animation:ta 6s infinite}.tb{animation:tb 6s infinite}
+@keyframes fy{50%{transform:translateY(-12px) rotate(6deg)}}
+@keyframes pp{0%,100%{transform:scale(0);opacity:0}12%,80%{transform:scale(1);opacity:1}92%{transform:scale(1);opacity:0}}
+@keyframes tw{0%,100%{transform:scale(.2);opacity:.2}50%{transform:scale(1.2);opacity:1}}
+@keyframes bl{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+@keyframes mo{0%{transform:scaleY(.25)}100%{transform:scaleY(1)}}
+@keyframes sp{to{transform:rotate(360deg)}}
+@keyframes gr{0%{transform:scaleX(0)}15%,88%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+@keyframes cv{0%{transform:scaleX(1)}45%,88%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes rg{0%{transform:scale(.4);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+@keyframes nt2{0%{transform:translateY(10px);opacity:0}20%{opacity:1}100%{transform:translateY(-80px) rotate(12deg);opacity:0}}
+@keyframes fly{0%{transform:translateX(170px);opacity:0}15%,80%{opacity:1}100%{transform:translateX(-100px);opacity:0}}
+@keyframes mer{0%{transform:scaleX(.12)}100%{transform:scaleX(1)}}
+@keyframes ld{to{transform:translateX(-240px)}}
+@keyframes s2{0%,100%{opacity:.15}50%{opacity:1}}
+@keyframes wv{from{transform:rotate(-135deg)}to{transform:rotate(-170deg)}}
+@keyframes pt{from{transform:rotate(-72deg)}to{transform:rotate(-90deg)}}
+@keyframes wr{from{transform:rotate(-58deg)}to{transform:rotate(-76deg)}}
+@keyframes kw{from{transform:rotate(-10deg)}to{transform:rotate(12deg)}}
+@keyframes hb{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(4deg)}}
+@keyframes ta{0%,45%{opacity:1}50%,95%{opacity:0}100%{opacity:1}}
+@keyframes tb{0%,45%{opacity:0}50%,95%{opacity:1}100%{opacity:0}}
+.sn.off *,.sn.off svg{animation-play-state:paused!important}
+.pln{padding:12px 16px;border-radius:14px;margin-bottom:8px;border:2px solid transparent;transition:.25s;cursor:pointer}
+.pln b{display:block;font:800 1.5rem/1.4 'Noto Sans Devanagari'}
+.pm{display:none;color:var(--mute);font-size:.85rem}
+#pl.sm .pm{display:block}
+.pln.on{background:var(--pk);color:#fff;transform:scale(1.02)}
+.pln.on .pm{color:#fff}
+
+.br{transform-box:fill-box;transform-origin:50% 100%;animation:br 3.8s ease-in-out infinite}
+@keyframes br{50%{transform:translateY(-1.6px) scale(1.004)}}
+.hd{animation:hd 5s ease-in-out infinite}
+@keyframes hd{0%,100%{transform:rotate(-1.5deg)}50%{transform:rotate(2deg)}}
+.fw{animation:fw 1.1s ease-in-out infinite alternate;animation-delay:.18s}
+.fp{animation:fp 1.6s ease-in-out infinite alternate}
+.fk{animation:fk .45s ease-in-out infinite alternate}
+.fh{transform:rotate(-22deg)}
+@keyframes fw{from{transform:rotate(-16deg)}to{transform:rotate(18deg)}}
+@keyframes fp{from{transform:rotate(-5deg)}to{transform:rotate(6deg)}}
+@keyframes fk{from{transform:rotate(-8deg)}to{transform:rotate(10deg)}}
+.mo2{opacity:0;transform-box:fill-box;transform-origin:center}
+.mo2.t,.talking .mo2{opacity:1;animation:mo .3s ease-in-out infinite alternate}
+.talking .sm{opacity:0}
+.talking .mo{animation-duration:.2s}
+.ray{animation:ray 6s ease-in-out infinite}
+@keyframes ray{50%{opacity:.55}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Proonima Misra","jobTitle":"Online Hindi Tutor for NRI and International Children","description":"Hindi teacher with 10+ years of experience teaching Hindi to children abroad.","knowsAbout":["Hindi language","Devanagari","Hindi for heritage learners"],"sameAs":["https://www.linkedin.com/in/proonima-misra-441122324"]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<radialGradient id="gSk" cx=".35" cy=".3" r=".85"><stop offset="0" stop-color="#fbdcbd"/><stop offset=".6" stop-color="#eebb91"/><stop offset="1" stop-color="#d4956a"/></radialGradient>
+<radialGradient id="gSk2" cx=".35" cy=".3" r=".85"><stop offset="0" stop-color="#f1c39c"/><stop offset=".65" stop-color="#e3a577"/><stop offset="1" stop-color="#c98a5e"/></radialGradient>
+<linearGradient id="gPk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff72b6"/><stop offset=".55" stop-color="#ff2e93"/><stop offset="1" stop-color="#c70f6a"/></linearGradient>
+<linearGradient id="gHr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3d3d49"/><stop offset=".4" stop-color="#16161c"/><stop offset="1" stop-color="#050507"/></linearGradient>
+<linearGradient id="gBk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34343d"/><stop offset="1" stop-color="#0a0a0c"/></linearGradient>
+<linearGradient id="gWall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff5fa"/><stop offset="1" stop-color="#ffd1e7"/></linearGradient>
+<linearGradient id="gFl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc3de"/><stop offset="1" stop-color="#ff98c4"/></linearGradient>
+<radialGradient id="gLight" cx=".85" cy=".05" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<filter id="fBl" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="3"/></filter>
+</defs></svg>
+<nav><div class="wrap">
+<div class="logo"><svg width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="12" fill="#ff2e93"/><text x="20" y="29" text-anchor="middle" font-family="Noto Sans Devanagari,sans-serif" font-weight="800" font-size="23" fill="#0d0d0d">हि</text></svg><div>Proonima Misra<small>HINDI TUTOR</small></div></div>
+<div class="links"><a class="h" href="#about">About</a><a class="h" href="#notes">Free Notes</a><a class="h" href="#level">Level Finder</a><a class="h" href="#world">Worldwide</a><a class="h" href="#time">Timings</a><a class="h" href="#faq">FAQ</a><a class="btn" style="padding:9px 20px" href="#book">Free Demo</a></div>
+</div></nav>
+
+<header class="hero">
+<div class="big">हिं</div>
+<span class="fl" style="left:4%;top:18%">अ</span><span class="fl" style="left:46%;top:8%;animation-delay:1s">क</span><span class="fl" style="left:90%;top:60%;animation-delay:2s">म</span><span class="fl" style="left:8%;top:80%;animation-delay:3s">ग</span>
+<div class="wrap">
+<div>
+<span class="tag">For NRI &amp; International Children</span>
+<h1>Your child can speak <em>Hindi</em> too.</h1>
+<p>Live one-on-one online Hindi classes by a teacher with 10+ years of experience. Only Hindi is taught. English is used just to explain, so no Hindi at home is no problem.</p>
+<div class="cta"><a class="btn" href="#book">Book a Free Demo</a><a class="btn o" href="#level">Find My Child's Level</a></div>
+</div>
+<div class="sn tall" data-s="hero"></div>
+</div>
+</header>
+
+<div class="mq"><div id="mq"></div></div>
+
+<section id="about" style="background:var(--soft)"><div class="wrap"><div class="sn" data-s="study"></div><div class="ab rv">
+<div style="padding:14px 14px 14px 0"><div class="pc">
+<span class="chip" style="top:-14px;left:-10px">10+ years teaching</span><span class="chip" style="bottom:56px;right:-12px">Hindi only · English to explain</span>
+<div class="av" id="av">PM</div>
+<h3>Proonima Misra</h3>
+<small>Hindi Teacher for NRI &amp; Foreign Kids</small>
+<div class="st"><div><b>10+</b><span>Years</span></div><div><b>1:1</b><span>Live classes</span></div><div><b>6+</b><span>Countries</span></div></div>
+</div></div>
+<div>
+<h2>About <i>Proonima Misra</i></h2>
+<p style="color:#444">Proonima Misra is a Hindi teacher with over 10 years of teaching experience. She helps children who live outside India, in NRI and international families, learn to speak, read and write Hindi with confidence.</p>
+<p style="color:#444;margin-top:10px">Her classes teach only Hindi. English is used just when a child needs something explained, so there is no confusion and no pressure.</p>
+<ul class="ul">
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff2e93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:5px"><path d="M5 12l5 5 9-10"/></svg><span>10+ years of teaching experience</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff2e93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:5px"><path d="M5 12l5 5 9-10"/></svg><span>One-on-one live attention for every child</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff2e93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:5px"><path d="M5 12l5 5 9-10"/></svg><span>Starts from the first letter. No Hindi at home needed</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff2e93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:5px"><path d="M5 12l5 5 9-10"/></svg><span>Patient, playful lessons using pictures, stories and speaking</span></li>
+</ul>
+<a class="btn k" href="https://www.linkedin.com/in/proonima-misra-441122324" target="_blank" rel="noopener">View LinkedIn profile</a>
+</div></div></div></section>
+
+<section><div class="wrap">
+<div class="sn" data-s="board"></div>
+<h2 class="rv">Programs for <i>every</i> child</h2>
+<p class="sub rv">Pick the path that fits your child. Patient, playful teaching, with English used only to explain.</p>
+<div class="bento rv">
+<div class="bc" data-p="beg" tabindex="0" role="button"><span class="gl">अ</span><h3>Hindi for Beginners</h3><p>Varnamala (alphabet), first words and simple sentences through games, songs and stories. Perfect if there is no Hindi at home.</p><span class="lm">Explore this program →</span></div>
+<div class="bc" data-p="spk" tabindex="0" role="button"><span class="gl">बोल</span><h3>Hindi Speaking</h3><p>Everyday conversation to talk with family.</p><span class="lm">Explore this program →</span></div>
+<div class="bc" data-p="rw" tabindex="0" role="button"><span class="gl">पढ़</span><h3>Reading &amp; Writing</h3><p>Matras, spelling, handwriting, stories.</p><span class="lm">Explore this program →</span></div>
+<div class="bc" data-p="her" tabindex="0" role="button"><span class="gl">घर</span><h3>Heritage Learners</h3><p>Understands Hindi but can't speak or write it yet.</p><span class="lm">Explore this program →</span></div>
+<div class="bc" data-p="sch" tabindex="0" role="button"><span class="gl">शाला</span><h3>School Hindi Support</h3><p>Homework support, grammar, reading and writing practice at your child's level.</p><span class="lm">Explore this program →</span></div>
+</div></div></section>
+
+<section id="level" class="dk"><div class="wrap">
+<div class="sn" data-s="test"></div>
+<h2 class="rv">Find your child's <i>level</i></h2>
+<p class="sub rv"><b id="bc" style="color:var(--pk)">500+</b> questions across 4 levels. Every test picks fresh random questions, then shows the level and the best program.</p>
+<div class="box rv" id="qz"></div>
+</div></section>
+
+<section id="learn"><div class="wrap">
+<div class="sn" data-s="speak"></div>
+<h2 class="rv">Try a little Hindi <i>right now</i></h2>
+<p class="sub rv">Tap a card to flip it. Press Listen to hear the word.</p>
+<div class="flips rv" id="flips"></div>
+</div></section>
+
+<section id="poem"><div class="wrap"><div class="sn" data-s="poem"></div>
+<h2 class="rv">Poem <i>corner</i></h2>
+<p class="sub rv">A short rhyme to practise reading and speaking. Press play and follow the glowing line. Tap any line to hear it. (Original practice rhyme.)</p>
+<div class="box rv" style="border:2px solid var(--ink)"><div id="pl"></div><div class="cta" style="margin-top:14px"><button class="btn" id="pbtn">Play poem</button><button class="btn k" id="pmean">Show roman + English</button></div></div>
+</div></section>
+
+<section id="notes" style="background:var(--soft)"><div class="wrap">
+<div class="sn" data-s="notes"></div>
+<h2 class="rv">Free <i>study notes</i></h2>
+<p class="sub rv">Quick Hindi notes for your child. Tap any card to hear it said.</p>
+<div class="tabs rv" id="tabs"></div>
+<div class="nts rv" id="nts"></div>
+<div style="margin-top:26px" class="rv"><a class="btn k" id="nw" href="#">Ask for the full notes on WhatsApp</a></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="sn" data-s="read"></div>
+<h2 class="rv">Learn Hindi the <i>easy way</i></h2>
+<p class="sub rv">Five simple habits that work for children growing up abroad.</p>
+<div class="tips rv"><div class="tp"><svg viewBox="0 0 120 90" aria-hidden="true"><circle cx="45" cy="45" r="30" fill="#ff2e93"/><text x="45" y="58" text-anchor="middle" font-family='Noto Sans Devanagari,sans-serif' font-size="38" font-weight="800" fill="#fff">अ</text><path d="M84 30q14 15 0 30M96 22q22 23 0 46" fill="none" stroke="#0d0d0d" stroke-width="4" stroke-linecap="round"/></svg><h3>1. Hear before you read</h3><p>Learn the sounds first. Hindi is largely written the way it sounds, so reading comes easily.</p></div><div class="tp"><svg viewBox="0 0 120 90" aria-hidden="true"><rect x="20" y="8" width="80" height="74" rx="10" fill="#fff" stroke="#0d0d0d" stroke-width="4"/><ellipse cx="60" cy="38" rx="20" ry="16" fill="#ff2e93"/><path d="M60 22q4-8 12-8" stroke="#0d0d0d" stroke-width="4" fill="none" stroke-linecap="round"/><text x="60" y="73" text-anchor="middle" font-family='Noto Sans Devanagari,sans-serif' font-size="16" font-weight="800">आम</text></svg><h3>2. Link letters to pictures</h3><p>अ for अनार, आ for आम. A picture makes a letter stick.</p></div><div class="tp"><svg viewBox="0 0 120 90" aria-hidden="true"><rect x="6" y="10" width="68" height="34" rx="14" fill="#ff2e93"/><path d="M22 44l-4 14 16-14z" fill="#ff2e93"/><rect x="46" y="44" width="68" height="34" rx="14" fill="#0d0d0d"/><path d="M98 78l4 10-16-10z" fill="#0d0d0d"/><text x="40" y="33" text-anchor="middle" fill="#fff" font-family='Noto Sans Devanagari,sans-serif' font-size="15" font-weight="800">नमस्ते</text><text x="80" y="67" text-anchor="middle" fill="#fff" font-family='Noto Sans Devanagari,sans-serif' font-size="15" font-weight="800">हाँ!</text></svg><h3>3. Speak 10 minutes a day</h3><p>Short and daily beats long and rare. Say three new words at dinner.</p></div><div class="tp"><svg viewBox="0 0 120 90" aria-hidden="true"><path d="M60 18q-22-10-46-4v54q24-6 46 4q22-10 46-4V14q-24-6-46 4z" fill="#fff" stroke="#0d0d0d" stroke-width="4" stroke-linejoin="round"/><path d="M60 18v54" stroke="#0d0d0d" stroke-width="4"/><circle cx="36" cy="38" r="9" fill="#ff2e93"/><path d="M76 34h18M76 46h18" stroke="#ff2e93" stroke-width="4" stroke-linecap="round"/></svg><h3>4. Use stories and songs</h3><p>Rhymes and short stories teach new words without feeling like study.</p></div><div class="tp"><svg viewBox="0 0 120 90" aria-hidden="true"><circle cx="28" cy="32" r="11" fill="#0d0d0d"/><circle cx="60" cy="26" r="14" fill="#ff2e93"/><circle cx="94" cy="34" r="10" fill="#0d0d0d"/><path d="M6 84a22 24 0 0 1 44 0zM36 84a24 28 0 0 1 48 0z" fill="#0d0d0d"/><path d="M36 84a24 28 0 0 1 48 0z" fill="#ff2e93"/><path d="M76 84a18 22 0 0 1 36 0z" fill="#0d0d0d"/></svg><h3>5. Practise with family</h3><p>Chat with grandparents on video calls. Real people give real reasons to speak.</p></div></div>
+</div></section>
+
+<section class="dk"><div class="wrap">
+<div class="sn" data-s="cal"></div>
+<h2 class="rv">Your child's <i>first 30 days</i></h2>
+<p class="sub rv">A typical plan. Every child moves at their own pace, and the plan is adjusted for them.</p>
+<div class="pl rv">
+<div><small>WEEK 1</small><h3>Sounds and letters</h3><p>The first vowels and consonants, with pictures and sounds.</p></div>
+<div><small>WEEK 2</small><h3>First words</h3><p>Everyday words: family, colours, numbers, food.</p></div>
+<div><small>WEEK 3</small><h3>Simple sentences</h3><p>Introducing yourself and short daily conversation.</p></div>
+<div><small>WEEK 4</small><h3>First short story</h3><p>Reading a small story aloud with confidence.</p></div>
+</div></div></section>
+
+<section id="world"><div class="wrap">
+<div class="sn" data-s="globe"></div>
+<h2 class="rv">Who is learning Hindi <i>around the world</i></h2>
+<p class="sub rv">Families and learners in many countries search for Hindi classes. Pick a country to see what feels easy and what is tricky for your language.</p>
+<div class="tabs rv" id="ctabs"></div>
+<div class="box cp rv" id="cp" style="border:2px solid var(--ink)"></div>
+<h2 class="rv" style="margin-top:60px">English to Hindi, <i>look it up</i></h2>
+<p class="sub rv">Type an English word or phrase to see the Hindi. Tap a card to hear it.</p>
+<input id="ts" class="rv" placeholder="Try: water, mother, thank you, how are you" autocomplete="off">
+<div class="tabs" id="tq"></div>
+<div class="nts wide" id="tr"></div>
+</div></section>
+
+<section id="time" style="background:var(--soft)"><div class="wrap">
+<div class="sn" data-s="clock"></div>
+<h2 class="rv">Classes in <i>your</i> time zone</h2>
+<p class="sub rv">Choose where you live and see class slots in your local time.</p>
+<div class="box rv">
+<select id="tz"><option value="America/New_York">USA - New York</option><option value="America/Los_Angeles">USA - Los Angeles</option><option value="Europe/London">UK - London</option><option value="America/Toronto">Canada - Toronto</option><option value="Australia/Sydney">Australia - Sydney</option><option value="Asia/Dubai">UAE - Dubai</option><option value="Asia/Singapore">Singapore</option></select>
+<div class="slots" id="slots"></div>
+<p style="font-size:.75rem;color:var(--mute);margin-top:12px">Sample slots. Exact timings are fixed together at the demo.</p>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="sn" data-s="film"></div>
+<h2 class="rv">See the teaching <i>in action</i></h2>
+<p class="sub rv">Sample lessons and student videos coming soon.</p>
+<div class="vg rv"><div class="vid">Intro lesson video coming soon</div><div class="vid">Student progress stories coming soon</div><div class="vid">Parent testimonials coming soon</div></div>
+</div></section>
+
+<section id="faq" style="background:var(--soft)"><div class="wrap">
+<div class="sn" data-s="faq"></div>
+<h2 class="rv">Questions <i>parents</i> ask</h2><p class="sub"></p>
+<div class="rv">
+<details><summary>Can my child learn Hindi if we only speak English at home?</summary><p>Yes. Classes begin from the very first letter. English is used only to explain, so your child follows easily.</p></details>
+<details><summary>Do you teach English too?</summary><p>No. Classes focus only on Hindi. English is used just to explain and understand.</p></details>
+<details><summary>What age group do you teach?</summary><p>Lessons are adapted to each child's age and current Hindi level. Share your child's age and learning goals when you enquire.</p></details>
+<details><summary>Are the classes live and one-on-one?</summary><p>Yes. Classes are live, online and one-on-one. The meeting platform can be confirmed when you book.</p></details>
+<details><summary>Which time zones do you support?</summary><p>USA, UK, Canada, Australia, UAE and Singapore. See the timing planner above.</p></details>
+<details><summary>How do I book a demo class?</summary><p>Fill the form below. It opens WhatsApp with your details ready to send.</p></details>
+</div></div></section>
+
+<section id="book" class="pinks"><div class="wrap">
+<div class="sn" data-s="book"></div>
+<h2 class="rv">Book your <i>free</i> demo class</h2><p class="sub rv">Share a few details. We reply on WhatsApp.</p>
+<div class="box rv"><div class="two">
+<input id="n" placeholder="Parent's name"><input id="a" placeholder="Child's age">
+<input id="c" placeholder="Country / City"><select id="l"><option>Complete beginner</option><option>Understands but can't speak</option><option>Speaks, needs reading/writing</option><option>Not sure</option></select>
+</div><button class="btn k" id="go" style="width:100%">Send on WhatsApp</button><p id="fm" style="margin-top:10px;font-size:.85rem;color:var(--pk2)"></p></div>
+</div></section>
+
+<footer><div class="wrap">© Proonima Misra · Online Hindi Tutor for NRI &amp; International Children</div></footer>
+<div class="md" id="md"><div class="mb" id="mb" role="dialog" aria-modal="true" tabindex="-1"></div></div>
+<a class="wa" id="wa" href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="30" height="30" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6s1.8 2.8 4.4 3.9c1.6.7 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c-.1-.1-.2-.2-.5-.3z"/></svg></a>
+
+<script>
+var SP="<svg width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M11 5 6 9H3v6h3l5 4z'/><path d='M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13'/></svg>";
+var WA="917838415957";
+function wl(t){return "https://wa.me/"+WA+"?text="+encodeURIComponent(t)}
+document.getElementById("wa").href=wl("Hello! I'd like to know more about Hindi classes for my child.");
+
+var W=["नमस्ते","धन्यवाद","स्वागत है","आम","कमल","परिवार","दोस्त","किताब","चाँद","मछली"],m="";
+for(var k=0;k<2;k++)W.forEach(function(x){m+="<span>"+x+" •</span>"});
+document.getElementById("mq").innerHTML=m;
+
+var io=("IntersectionObserver" in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12}):null;
+document.querySelectorAll(".rv").forEach(function(el){io?io.observe(el):el.classList.add("in")});
+
+var L=[["अ","a","अनार","Pomegranate"],["आ","aa","आम","Mango"],["क","ka","कमल","Lotus"],["ख","kha","खरगोश","Rabbit"],["ग","ga","गाय","Cow"],["घ","gha","घर","House"],["च","cha","चाँद","Moon"],["म","ma","मछली","Fish"]],fh="";
+L.forEach(function(x){
+ fh+="<div class='fc' tabindex='0' role='button'><div class='fi'><div class='fa'><div class='g'>"+x[0]+"</div><small>"+x[1]+"</small></div><div class='fb'><div class='w'>"+x[2]+"</div><div>"+x[3]+"</div><button data-s='"+x[2]+"'>"+SP+" Listen</button></div></div></div>";
+});
+var fe=document.getElementById("flips");fe.innerHTML=fh;
+fe.addEventListener("click",function(e){
+ var s=e.target.closest("button[data-s]");
+ if(s){e.stopPropagation();say(s.dataset.s);return}
+ var f=e.target.closest(".fc");if(f)f.classList.toggle("on");
+});
+
+var IST=[[7,0],[10,30],[17,0],[20,0]];
+function slots(){
+ var tz=document.getElementById("tz").value,n=new Date(),h="";
+ IST.forEach(function(t){
+  var d=new Date(Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate(),t[0]-5,t[1]-30));
+  var tm=d.toLocaleTimeString("en-US",{timeZone:tz,hour:"numeric",minute:"2-digit"});
+  var dy=d.toLocaleDateString("en-US",{timeZone:tz,weekday:"short"});
+  var rf=d.toLocaleDateString("en-US",{timeZone:"Asia/Kolkata",weekday:"short"});
+  h+="<div class='slot'>"+tm+"<small>"+(dy===rf?"same day":dy+" (diff. day)")+" · "+("0"+t[0]).slice(-2)+":"+("0"+t[1]).slice(-2)+" IST</small></div>";
+ });
+ document.getElementById("slots").innerHTML=h;
+}
+document.getElementById("tz").onchange=slots;slots();
+
+fe.addEventListener("keydown",function(e){if((e.key==="Enter"||e.key===" ")&&e.target.classList.contains("fc")){e.preventDefault();e.target.classList.toggle("on")}});
+
+function say(t){try{var u=new SpeechSynthesisUtterance(t),b=document.body;u.lang="hi-IN";u.rate=.8;u.onstart=function(){b.classList.add("talking")};u.onend=u.onerror=function(){b.classList.remove("talking")};speechSynthesis.cancel();speechSynthesis.speak(u)}catch(err){}}
+var N={
+"Vowels":[["अ","a"],["आ","aa"],["इ","i"],["ई","ee"],["उ","u"],["ऊ","oo"],["ए","e"],["ऐ","ai"],["ओ","o"],["औ","au"]],
+"Consonants":[["क","ka"],["ख","kha"],["ग","ga"],["घ","gha"],["च","cha"],["छ","chha"],["ज","ja"],["त","ta"],["द","da"],["न","na"],["प","pa"],["फ","pha"],["ब","ba"],["म","ma"],["य","ya"],["र","ra"],["ल","la"],["व","va"]],
+"Numbers 1-10":[["१","ek","one"],["२","do","two"],["३","teen","three"],["४","chaar","four"],["५","paanch","five"],["६","chhah","six"],["७","saat","seven"],["८","aath","eight"],["९","nau","nine"],["१०","das","ten"]],
+"Greetings":[["नमस्ते","namaste","Hello"],["धन्यवाद","dhanyavaad","Thank you"],["कृपया","kripya","Please"],["माफ़ कीजिए","maaf keejiye","Sorry / excuse me"],["आपका नाम क्या है?","aapka naam kya hai?","What is your name?"],["मेरा नाम ... है","mera naam ... hai","My name is ..."],["शुभ रात्रि","shubh raatri","Good night"]],
+"Family":[["माँ","maa","Mother"],["पापा","papa","Father"],["दादा","daada","Grandfather (father's side)"],["दादी","daadi","Grandmother (father's side)"],["नाना","naana","Grandfather (mother's side)"],["नानी","naani","Grandmother (mother's side)"],["भाई","bhai","Brother"],["बहन","behen","Sister"]]
+};
+var cur="Vowels",tb=document.getElementById("tabs"),nt=document.getElementById("nts");
+function showN(){
+ var d=N[cur],wide=d[0][0].length>3||cur==="Greetings"||cur==="Family",h="";
+ nt.className="nts rv in"+(wide?" wide":"");
+ d.forEach(function(x){h+="<button class='nt"+(wide?" w":"")+"' data-t='"+x[0].replace(/'/g,"")+"'><b>"+x[0]+"</b><span>"+x[1]+"</span>"+(x[2]?"<span>"+x[2]+"</span>":"")+"</button>"});
+ nt.innerHTML=h;
+ tb.querySelectorAll(".opt").forEach(function(o){o.classList.toggle("on",o.dataset.k===cur)});
+}
+var th="";Object.keys(N).forEach(function(k){th+="<button class='opt' data-k='"+k+"'>"+k+"</button>"});
+tb.innerHTML=th;
+tb.addEventListener("click",function(e){var b=e.target.closest(".opt");if(b){cur=b.dataset.k;showN()}});
+nt.addEventListener("click",function(e){var b=e.target.closest(".nt");if(b)say(b.dataset.t)});
+showN();
+document.getElementById("nw").href=wl("Hello! Please share the full Hindi study notes for my child.");
+
+/*DATA*/
+var GR=[
+{n:"Vowels",l:1,k:"L",d:"अ|a;आ|aa;इ|i;ई|ee;उ|u;ऊ|oo;ए|e;ऐ|ai;ओ|o;औ|au"},
+{n:"Consonants",l:1,k:"L",d:"क|ka;ख|kha;ग|ga;घ|gha;च|cha;छ|chha;ज|ja;झ|jha;त|ta;थ|tha;द|da;ध|dha;न|na;प|pa;फ|pha;ब|ba;भ|bha;म|ma;य|ya;र|ra;ल|la;व|va;श|sha;स|sa;ह|ha"},
+{n:"Numbers 1-10",l:1,d:"एक|ek|one;दो|do|two;तीन|teen|three;चार|chaar|four;पाँच|paanch|five;छह|chhah|six;सात|saat|seven;आठ|aath|eight;नौ|nau|nine;दस|das|ten"},
+{n:"Greetings",l:1,d:"नमस्ते|namaste|Hello;धन्यवाद|dhanyavaad|Thank you;कृपया|kripya|Please;हाँ|haan|Yes;नहीं|nahin|No;माफ़ कीजिए|maaf keejiye|Sorry;अलविदा|alvida|Goodbye;शुभ रात्रि|shubh raatri|Good night;सुप्रभात|suprabhaat|Good morning"},
+{n:"Numbers 11-20",l:2,d:"ग्यारह|gyaarah|eleven;बारह|baarah|twelve;तेरह|terah|thirteen;चौदह|chaudah|fourteen;पंद्रह|pandrah|fifteen;सोलह|solah|sixteen;सत्रह|satrah|seventeen;अठारह|athaarah|eighteen;उन्नीस|unnees|nineteen;बीस|bees|twenty"},
+{n:"Family",l:2,d:"माँ|maa|mother;पापा|papa|father;भाई|bhai|brother;बहन|behen|sister;दादा|daada|grandfather (father's side);दादी|daadi|grandmother (father's side);नाना|naana|grandfather (mother's side);नानी|naani|grandmother (mother's side);बेटा|beta|son;बेटी|beti|daughter;चाचा|chacha|uncle (father's brother);मामा|mama|uncle (mother's brother);दोस्त|dost|friend;शिक्षक|shikshak|teacher"},
+{n:"Colours",l:2,d:"लाल|laal|red;नीला|neela|blue;पीला|peela|yellow;हरा|hara|green;सफ़ेद|safed|white;काला|kaala|black;गुलाबी|gulaabi|pink;नारंगी|naarangi|orange;भूरा|bhoora|brown;बैंगनी|baingani|purple"},
+{n:"Animals",l:2,d:"कुत्ता|kutta|dog;बिल्ली|billi|cat;गाय|gaay|cow;घोड़ा|ghoda|horse;हाथी|haathi|elephant;शेर|sher|lion;बंदर|bandar|monkey;मछली|machhli|fish;चिड़िया|chidiya|bird;खरगोश|kharagosh|rabbit;भालू|bhaalu|bear;बकरी|bakri|goat;मोर|mor|peacock;तोता|tota|parrot;साँप|saanp|snake;मेंढक|mendhak|frog"},
+{n:"Food",l:2,d:"आम|aam|mango;सेब|seb|apple;केला|kela|banana;अंगूर|angoor|grapes;संतरा|santara|orange fruit;तरबूज़|tarbooz|watermelon;दूध|doodh|milk;पानी|paani|water;रोटी|roti|roti (flatbread);चावल|chaawal|rice;दाल|daal|lentils;चाय|chaay|tea;मिठाई|mithaai|sweets;नमक|namak|salt;चीनी|cheeni|sugar;अंडा|anda|egg"},
+{n:"Body",l:3,d:"सिर|sir|head;आँख|aankh|eye;कान|kaan|ear;नाक|naak|nose;मुँह|munh|mouth;हाथ|haath|hand;पैर|pair|foot;दाँत|daant|tooth;बाल|baal|hair;पेट|pet|stomach;उँगली|ungli|finger;दिल|dil|heart"},
+{n:"Days",l:3,d:"सोमवार|somvaar|Monday;मंगलवार|mangalvaar|Tuesday;बुधवार|budhvaar|Wednesday;गुरुवार|guruvaar|Thursday;शुक्रवार|shukravaar|Friday;शनिवार|shanivaar|Saturday;रविवार|ravivaar|Sunday"},
+{n:"Action words",l:3,d:"खाना|khaana|to eat;पीना|peena|to drink;जाना|jaana|to go;आना|aana|to come;सोना|sona|to sleep;पढ़ना|padhna|to read;लिखना|likhna|to write;बोलना|bolna|to speak;देखना|dekhna|to see;सुनना|sunna|to listen;खेलना|khelna|to play;दौड़ना|daudna|to run;हँसना|hansna|to laugh;रोना|rona|to cry;गाना|gaana|to sing;नहाना|nahaana|to bathe"},
+{n:"Describing words",l:3,d:"बड़ा|bada|big;छोटा|chhota|small;गरम|garam|hot;ठंडा|thanda|cold;अच्छा|achchha|good;बुरा|bura|bad;नया|naya|new;पुराना|puraana|old;ऊँचा|ooncha|tall;मीठा|meetha|sweet"},
+{n:"Home and nature",l:3,d:"घर|ghar|house;स्कूल|school|school;किताब|kitaab|book;कलम|kalam|pen;मेज़|mez|table;कुर्सी|kursi|chair;दरवाज़ा|darvaaza|door;खिड़की|khidki|window;बाज़ार|baazaar|market;पेड़|ped|tree;फूल|phool|flower;सूरज|sooraj|sun;चाँद|chaand|moon;तारा|taara|star;बारिश|baarish|rain;नदी|nadi|river"},
+{n:"Sentences",l:4,k:"S",d:"आप कैसे हैं?|aap kaise hain?|How are you?;मैं ठीक हूँ।|main theek hoon.|I am fine.;आपका नाम क्या है?|aapka naam kya hai?|What is your name?;मेरा नाम राधा है।|mera naam Radha hai.|My name is Radha.;यह मेरी किताब है।|yah meri kitaab hai.|This is my book.;मुझे पानी चाहिए।|mujhe paani chaahiye.|I need water.;मुझे भूख लगी है।|mujhe bhookh lagi hai.|I am hungry.;मुझे प्यास लगी है।|mujhe pyaas lagi hai.|I am thirsty.;आप कहाँ रहते हैं?|aap kahaan rehte hain?|Where do you live?;आज मौसम अच्छा है।|aaj mausam achchha hai.|The weather is nice today.;आज मेरा जन्मदिन है।|aaj mera janmadin hai.|Today is my birthday.;यह क्या है?|yah kya hai?|What is this?;वह कौन है?|vah kaun hai?|Who is that?;आपकी उम्र कितनी है?|aapki umr kitni hai?|How old are you?;मेरे दो भाई हैं।|mere do bhai hain.|I have two brothers.;मुझे आम पसंद है।|mujhe aam pasand hai.|I like mangoes.;कृपया धीरे बोलिए।|kripya dheere boliye.|Please speak slowly.;मुझे हिंदी सीखनी है।|mujhe Hindi seekhni hai.|I want to learn Hindi.;दरवाज़ा खोलिए।|darvaaza kholiye.|Please open the door.;मुझे घर जाना है।|mujhe ghar jaana hai.|I have to go home.;यह कितने का है?|yah kitne ka hai?|How much is this?;आप कहाँ जा रहे हैं?|aap kahaan ja rahe hain?|Where are you going?;मेरी माँ खाना बनाती हैं।|meri maa khaana banaati hain.|My mother cooks food.;बच्चे पार्क में खेल रहे हैं।|bachche park mein khel rahe hain.|The children are playing in the park.;मुझे नींद आ रही है।|mujhe neend aa rahi hai.|I am feeling sleepy.;चलो, खेलते हैं!|chalo, khelte hain!|Come on, let's play!;आज बहुत ठंड है।|aaj bahut thand hai.|It is very cold today.;मुझे यह पसंद नहीं है।|mujhe yah pasand nahin hai.|I do not like this."}
+];
+GR.forEach(function(g){g.it=g.d.split(";").map(function(x){return x.split("|")})});
+var B=[];
+GR.forEach(function(g,gi){g.it.forEach(function(x,i){
+ var k=gi+":"+i;
+ function add(q,h,a,f){B.push({l:g.l,g:gi,k:k,q:q,h:h,a:a,f:f})}
+ if(g.k==="L"){add("Which sound does this letter make?",x[0],x[1],1);add("Which letter makes this sound?",x[1],x[0],0)}
+ else if(g.k==="S"){add("What does this sentence mean?",x[0],x[2],2);add("How do you say this in Hindi?",x[2],x[0],0)}
+ else{add("What does this word mean?",x[0],x[2],2);add("How do you say this in Hindi?",x[2],x[0],0);add("How do we read this word aloud?",x[0],x[1],1)}
+})});
+function shuf(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function opts(q){var p=[];GR[q.g].it.forEach(function(x){if(x[q.f]!==q.a&&p.indexOf(x[q.f])<0)p.push(x[q.f])});shuf(p);var o=p.slice(0,3);o.push(q.a);return shuf(o)}
+function pickN(l,n){var c=shuf(B.filter(function(q){return q.l===l})),seen={},r=[];for(var i=0;i<c.length&&r.length<n;i++){if(!seen[c[i].k]){seen[c[i].k]=1;r.push(c[i])}}return r}
+/*ENDDATA*/
+
+var LN=["Starter","Beginner","Elementary","Intermediate","Advanced"];
+var REC=["beg","beg","spk","rw","rw"];
+var S={};
+var qz=document.getElementById("qz");
+document.getElementById("bc").textContent=B.length;
+function hasHi(t){return /[\u0900-\u097F]/.test(t)}
+function qStart(){
+ qz.innerHTML="<p style='margin-bottom:14px'>Choose how you want to test:</p><button class='btn' data-m='full' style='margin-bottom:16px'>Start full level test (20 questions)</button><p style='font-size:.85rem;color:var(--mute);margin-bottom:8px'>Or practise one level (10 questions):</p><div class='opts' style='margin:0'><button class='opt' data-m='1'>1 Beginner</button><button class='opt' data-m='2'>2 Elementary</button><button class='opt' data-m='3'>3 Intermediate</button><button class='opt' data-m='4'>4 Advanced</button></div>";
+}
+function qBegin(m){
+ var q=[];
+ if(m==="full"){for(var l=1;l<=4;l++)q=q.concat(pickN(l,5))}else q=pickN(+m,10);
+ S={m:m,q:q,i:0,a:[],done:false};qShow();
+}
+function qShow(){
+ var q=S.q[S.i],o=opts(q),pc=Math.round(S.i/S.q.length*100);
+ var h="<div class='qh'><span class='lv'>Level "+q.l+" · "+LN[q.l]+"</span><span>Question "+(S.i+1)+" / "+S.q.length+"</span></div><div class='qbar'><i style='width:"+pc+"%'></i></div><p class='qq'>"+q.q+"</p><div class='qd"+(hasHi(q.h)?"":" en")+"'>"+q.h+"</div><div class='qo'>";
+ o.forEach(function(x){h+="<button class='qb' data-v=\""+x.replace(/"/g,"&quot;")+"\">"+x+"</button>"});
+ qz.innerHTML=h+"</div><div id='qf' style='margin-top:14px'></div>";
+ S.cur=q;S.locked=false;
+}
+function qAnswer(b){
+ if(S.locked)return;S.locked=true;
+ var q=S.cur,v=b.dataset.v,ok=v===q.a;
+ S.a.push({q:q,v:v,ok:ok});
+ qz.querySelectorAll(".qb").forEach(function(x){x.disabled=true;if(x.dataset.v===q.a)x.classList.add("ok")});
+ if(!ok)b.classList.add("no");
+ var last=S.i===S.q.length-1;
+ document.getElementById("qf").innerHTML="<p style='font-weight:700;margin-bottom:10px'>"+(ok?"Correct!":"Not quite. The answer is highlighted.")+"</p><button class='btn' data-nx='1'>"+(last?"See my result":"Next question")+"</button>";
+ if(hasHi(q.h)&&ok)say(q.h);
+}
+function qNext(){S.i++;if(S.i>=S.q.length)qResult();else qShow()}
+function qResult(){
+ var sc={1:[0,0],2:[0,0],3:[0,0],4:[0,0]},t=0;
+ S.a.forEach(function(x){sc[x.q.l][1]++;if(x.ok){sc[x.q.l][0]++;t++}});
+ var lvl=0,h="";
+ if(S.m==="full"){for(var l=1;l<=4;l++){if(sc[l][0]>=3)lvl=l;else break}}
+ else{var L=+S.m,pc=sc[L][0]/sc[L][1];lvl=pc>=.6?L:Math.max(L-1,0)}
+ var rk=REC[lvl];
+ h="<div class='qh'><span class='lv'>Your result</span><span>"+(S.m==="full"?"Full test":"Level "+S.m+" practice")+"</span></div>";
+ h+="<div class='sc'>"+t+"/"+S.q.length+"</div><h3 style='margin:6px 0 4px'>Level: "+LN[lvl]+"</h3><p style='color:#555;margin-bottom:12px'>"+(lvl===0?"Brand new to Hindi, and that is perfectly fine. We start from the very first letter.":lvl===4?"Excellent. Your child is ready for reading, writing and richer Hindi.":"Good progress. The next step is the "+LN[lvl+1]+" level.")+"</p>";
+ for(var l2=1;l2<=4;l2++){if(sc[l2][1]){var p=Math.round(sc[l2][0]/sc[l2][1]*100);h+="<div class='rl'><b>"+LN[l2]+"</b><div><i style='width:"+p+"%'></i></div><span>"+sc[l2][0]+"/"+sc[l2][1]+"</span></div>"}}
+ var miss=S.a.filter(function(x){return !x.ok});
+ if(miss.length){h+="<h4 style='margin-top:14px;font-size:.85rem'>Review: what to revise</h4><div class='rv2'>";miss.forEach(function(x){h+="<p>"+x.q.h+" → <b>"+x.q.a+"</b></p>"});h+="</div>"}
+ h+="<div style='background:var(--ink);color:#fff;border-radius:16px;padding:16px;margin:14px 0'><b>Best program for your child: "+P[rk].t+"</b><p style='color:#bbb;margin:6px 0 12px;font-size:.88rem'>"+P[rk].tag+"</p><button class='btn' data-pk='"+rk+"'>See this program</button> <a class='btn o' href='#book'>Book free demo</a></div>";
+ h+="<button class='opt' data-rs='1'>Try again with new random questions</button>";
+ qz.innerHTML=h;
+}
+qz.addEventListener("click",function(e){
+ var b;
+ if(b=e.target.closest("[data-m]"))qBegin(b.dataset.m);
+ else if(b=e.target.closest(".qb"))qAnswer(b);
+ else if(e.target.closest("[data-nx]"))qNext();
+ else if(e.target.closest("[data-rs]"))qStart();
+ else if(b=e.target.closest("[data-pk]"))openP(b.dataset.pk);
+});
+qStart();
+
+var P={
+beg:{t:"Hindi for Beginners",g:"अ",tag:"Starts from the very first letter",who:"Children with no Hindi at home, age [age range].",learn:["Varnamala: vowels and consonants with pictures and sounds","The first 100 everyday words","Counting, colours and family words","Simple 3 to 4 word sentences"],ex:[["माँ","maa","Mother"],["पानी","paani","Water"],["मैं ठीक हूँ","main theek hoon","I am fine"]],cls:"One-on-one, [class length]. Picture cards, short games, a little writing and a quick recap. English is used only to explain."},
+spk:{t:"Hindi Speaking",g:"बोल",tag:"Confidence to talk with family",who:"Children who know some words and want to speak.",learn:["Daily conversation: greetings, school, food, play","Talking with grandparents and relatives","Asking and answering simple questions","Speaking without fear of mistakes"],ex:[["आप कैसे हैं?","aap kaise hain?","How are you?"],["मुझे भूख लगी है","mujhe bhookh lagi hai","I am hungry"],["चलो खेलते हैं","chalo khelte hain","Let's play"]],cls:"Mostly speaking practice with role-play and small chats. Gentle correction, never pressure."},
+rw:{t:"Reading & Writing",g:"पढ़",tag:"Matras, spelling and short stories",who:"Children who speak a little and want to read and write Devanagari.",learn:["Matras (vowel signs) and joining letters","Handwriting practice","Spelling and word building","Reading short stories and answering questions"],ex:[["किताब","kitaab","Book"],["बादल","baadal","Cloud"],["कहानी","kahaani","Story"]],cls:"Read aloud, write, then check together. Reading material grows with your child's level."},
+her:{t:"Heritage Learners",g:"घर",tag:"For kids who understand Hindi but hesitate to speak",who:"Children who hear Hindi at home but reply in English.",learn:["Turning understanding into speaking","Pronunciation and simple grammar","Introduction to reading and writing","Festivals, stories and culture"],ex:[["त्योहार","tyohaar","Festival"],["परिवार","parivaar","Family"],["दादी","daadi","Grandmother"]],cls:"Conversation-first lessons that build on what your child already understands."},
+sch:{t:"School Hindi Support",g:"शाला",tag:"Homework, grammar, reading and writing practice",who:"Children studying Hindi at school who need extra help.",learn:["Homework help and revision","Grammar basics: nouns, verbs and sentences","Reading comprehension and writing","Revision and practice for current class topics"],ex:[["संज्ञा","sangya","Noun"],["क्रिया","kriya","Verb"],["वाक्य","vaakya","Sentence"]],cls:"Lessons can focus on your child's current school topics, with practice matched to their learning level."}
+};
+var md=document.getElementById("md"),mb=document.getElementById("mb");
+function openP(k){
+ var p=P[k],h="<button class='mx' data-x='1' aria-label='Close'>×</button><span class='gl'>"+p.g+"</span><h3>"+p.t+"</h3><p style='font-weight:600;color:var(--pk2)'>"+p.tag+"</p><h4>Who it is for</h4><p>"+p.who+"</p><h4>What your child will learn</h4><ul>";
+ p.learn.forEach(function(x){h+="<li>"+x+"</li>"});
+ h+="</ul><h4>A taste of the Hindi</h4><div class='exg'>";
+ p.ex.forEach(function(x){h+="<div><b>"+x[0]+"</b><span>"+x[1]+"</span><span>"+x[2]+"</span></div>"});
+ h+="</div><h4>How a class feels</h4><p>"+p.cls+"</p><div style='margin-top:20px;display:flex;gap:10px;flex-wrap:wrap'><a class='btn' href='#book' data-x='1'>Book a free demo</a><a class='btn k' href='#level' data-x='1'>Check my child's level</a></div>";
+ mb.innerHTML=h;md.classList.add("open");document.body.style.overflow="hidden";mb.scrollTop=0;mb.focus();
+}
+function closeP(){md.classList.remove("open");document.body.style.overflow=""}
+md.addEventListener("click",function(e){if(e.target===md||e.target.closest("[data-x]"))closeP()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeP()});
+var bn=document.querySelector(".bento");
+bn.addEventListener("click",function(e){var c=e.target.closest(".bc");if(c)openP(c.dataset.p)});
+bn.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){var c=e.target.closest(".bc");if(c){e.preventDefault();openP(c.dataset.p)}}});
+
+var C=[
+{c:"USA",lg:["English","Spanish"],why:"Indian-American families want children to talk with grandparents and stay close to their culture.",easy:"Hindi spelling is very regular: one letter, one sound, much like Spanish vowels.",hard:"Aspirated sounds (kh, gh, th, bh) and the two kinds of t and d.",kw:["Hindi classes for kids USA","online Hindi tutor for heritage learners","learn Hindi for English speakers"]},
+{c:"UK",lg:["English","Punjabi","Gujarati","Urdu"],why:"Many British Indian families look for a patient tutor so children can speak Hindi at home and on visits to India.",easy:"Many English words (school, station, train) are used in everyday Hindi too.",hard:"Reading the Devanagari script, and remembering that every noun is masculine or feminine.",kw:["Hindi tutor UK online","Hindi lessons for British Indian children","learn Hindi for beginners UK"]},
+{c:"Canada",lg:["English","French","Punjabi"],why:"Families in Toronto, Vancouver and beyond want children to keep Hindi alive across generations.",easy:"French speakers already know noun gender, so Hindi grammar will feel familiar in spirit.",hard:"Retroflex sounds (ट, ड) where the tongue curls back.",kw:["Hindi classes Canada kids","online Hindi teacher Toronto","Hindi for NRI children"]},
+{c:"Australia",lg:["English"],why:"A growing Indian community wants children comfortable with Hindi for family, travel and culture.",easy:"The same regular spelling: what you see is what you say.",hard:"Word order: the verb comes at the end of the sentence.",kw:["Hindi tutor Australia online","Hindi classes for kids Sydney Melbourne","learn Hindi Australia"]},
+{c:"UAE",lg:["Arabic","English","Urdu"],why:"Large Indian communities in the Gulf want children to read and speak Hindi while living abroad.",easy:"Hindi shares many words with Arabic and Persian, like किताब (kitaab) and वक़्त (waqt).",hard:"Hindi is written left to right with letters hanging from a top line.",kw:["Hindi classes Dubai kids","Hindi tutor UAE online","learn Hindi Abu Dhabi"]},
+{c:"Singapore",lg:["English","Mandarin","Malay","Tamil"],why:"A multilingual country where families often add Hindi to the languages their children already speak.",easy:"Tamil speakers already know retroflex sounds. Hindi is not tonal, unlike Mandarin.",hard:"Plain and aspirated sounds (ka vs kha) need practice for many learners.",kw:["Hindi classes Singapore","Hindi tutor for kids Singapore","learn Hindi online Singapore"]},
+{c:"Germany",lg:["German","English"],why:"Indian professionals' families and language enthusiasts look for online Hindi lessons.",easy:"German speakers are used to noun genders and verbs near the end of a sentence.",hard:"Postpositions: Hindi says 'ghar mein' (house in), not 'in the house'.",kw:["Hindi lernen online","Hindi tutor Germany","learn Hindi for Germans"]},
+{c:"Japan",lg:["Japanese"],why:"Learners drawn to India through business, yoga, films and travel look for Hindi courses.",easy:"Hindi and Japanese both put the verb at the end and use small words after nouns.",hard:"Long and short vowels, and aspirated consonants.",kw:["learn Hindi in Japan","Hindi lessons for Japanese speakers","online Hindi course"]},
+{c:"Nepal",lg:["Nepali","Maithili"],why:"Hindi is widely understood, and learners want to read and write it well.",easy:"Nepali is also written in Devanagari and shares many words with Hindi.",hard:"Hindi gender and verb forms differ from Nepali.",kw:["Hindi course for Nepali speakers","learn Hindi writing","Hindi tutor online"]}
+];
+var ct=document.getElementById("ctabs"),cp=document.getElementById("cp"),ch="";
+C.forEach(function(x,i){ch+="<button class='opt' data-i='"+i+"'>"+x.c+"</button>"});
+ct.innerHTML=ch;
+function showC(i){
+ var x=C[i],h="<h3>Learning Hindi from "+x.c+"</h3><div>";
+ x.lg.forEach(function(l){h+="<span class='ch'>"+l+"</span>"});
+ h+="</div><h4>Why families here learn Hindi</h4><p>"+x.why+"</p><h4>Easy for you</h4><p>"+x.easy+"</p><h4>Tricky at first</h4><p>"+x.hard+"</p><h4>Popular searches</h4><div>";
+ x.kw.forEach(function(k){h+="<span class='ch k'>"+k+"</span>"});
+ cp.innerHTML=h+"</div><div style='margin-top:18px'><a class='btn' href='#book'>Book a free demo</a></div>";
+ ct.querySelectorAll(".opt").forEach(function(o){o.classList.toggle("on",+o.dataset.i===i)});
+}
+ct.addEventListener("click",function(e){var b=e.target.closest(".opt");if(b)showC(+b.dataset.i)});
+showC(0);
+
+var DI=[];
+GR.forEach(function(g){if(g.k!=="L")g.it.forEach(function(x){DI.push({hi:x[0],ro:x[1],en:x[2]})})});
+var ts=document.getElementById("ts"),tr=document.getElementById("tr"),tq=document.getElementById("tq");
+function lookup(v){
+ v=v.trim().toLowerCase();
+ if(!v){tr.innerHTML="";return}
+ var r=DI.filter(function(d){return d.en.toLowerCase().indexOf(v)>-1||d.ro.toLowerCase().indexOf(v)>-1||d.hi.indexOf(v)>-1}).slice(0,9),h="";
+ r.forEach(function(d){h+="<button class='nt w' data-t=\""+d.hi.replace(/"/g,"")+"\"><b>"+d.hi+"</b><span>"+d.ro+"</span><span>"+d.en+"</span></button>"});
+ tr.className="nts wide"+(r.length?"":" none");
+ tr.innerHTML=r.length?h:"<p style='color:var(--mute)'>No match yet. Try another word, or ask the teacher at the demo class.</p>";
+}
+ts.addEventListener("input",function(){lookup(ts.value)});
+var tqh="";["water","mother","thank you","how are you","book","friend","good night","hungry"].forEach(function(w){tqh+="<button class='opt' data-w='"+w+"'>"+w+"</button>"});
+tq.innerHTML=tqh;
+tq.addEventListener("click",function(e){var b=e.target.closest(".opt");if(b){ts.value=b.dataset.w;lookup(b.dataset.w)}});
+tr.addEventListener("click",function(e){var b=e.target.closest(".nt");if(b)say(b.dataset.t)});
+lookup("water");ts.value="water";
+
+/*SCN*/
+var SK="#f0b98d",PK="#ff2e93",IN="#0d0d0d",PL="#ff8cc4";
+function T(x,y,s,arm,o){o=o||{};
+ var mo=o.talk?'<ellipse class="mo2 t" cx="60" cy="63" rx="5.5" ry="4" fill="#8a1d44"/>':'<path class="sm" d="M52 61q8 7 16 0" stroke="#b02a62" stroke-width="2.6" fill="none" stroke-linecap="round"/><ellipse class="mo2" cx="60" cy="63" rx="5.5" ry="4" fill="#8a1d44"/>';
+ var fa={aw:"fw",ap:"fp",ak:"fk",ah:"fh"}[arm]||"";
+ var eye=function(cx){return '<g class="bl"><ellipse cx="'+cx+'" cy="51" rx="5" ry="3.7" fill="#fff"/><g class="px" style="--d:1.4"><circle cx="'+cx+'" cy="51" r="2.7" fill="#2a1a12"/><circle cx="'+(cx+.9)+'" cy="50" r=".9" fill="#fff"/></g><path d="M'+(cx-6)+' 49q6-5 12 0" stroke="#14141a" stroke-width="1.8" fill="none" stroke-linecap="round"/></g>'};
+ return '<g class="px" style="--d:8"><g transform="translate('+x+','+y+') scale('+s+')"><ellipse cx="60" cy="206" rx="46" ry="7" fill="#000" opacity=".22" filter="url(#fBl)"/><g class="br">'+
+ '<path d="M36 96q-10 22-8 44" stroke="#f0278b" stroke-width="14" stroke-linecap="round" fill="none"/><ellipse cx="28" cy="146" rx="6.5" ry="8" fill="url(#gSk)"/><ellipse cx="29" cy="139" rx="6" ry="2" fill="none" stroke="#fff" stroke-width="2"/>'+
+ '<path d="M30 92h60l16 114H14z" fill="url(#gPk)"/><path d="M45 130l-8 76M60 120l-3 86M75 120l3 86M90 130l8 76" stroke="#8f0a4d" stroke-width="2" opacity=".3" fill="none"/><path d="M14 198h92l2 8H12z" fill="#ffe0ef"/>'+
+ '<path d="M34 90h19l45 116H76z" fill="url(#gBk)"/><path d="M53 90l45 116" stroke="#ff7ab8" stroke-width="1.5" opacity=".7"/>'+
+ '<path d="M28 94q0-14 16-16h32q16 2 16 16l-4 18H32z" fill="#e5217f"/><path d="M50 78l10 16 10-16" fill="#f4b78d"/>'+
+ '<path d="M52 68h16v14q-8 8-16 0z" fill="url(#gSk)"/><ellipse cx="60" cy="76" rx="12" ry="4" fill="#a8693f" opacity=".3"/>'+
+ '<g class="hd" style="transform-box:view-box;transform-origin:60px 76px"><circle cx="35" cy="52" r="5" fill="url(#gSk)"/><circle cx="85" cy="52" r="5" fill="url(#gSk)"/><circle cx="35" cy="60" r="3" fill="#fff" stroke="#ff2e93" stroke-width="1.5"/><circle cx="85" cy="60" r="3" fill="#fff" stroke="#ff2e93" stroke-width="1.5"/>'+
+ '<circle cx="60" cy="17" r="13" fill="url(#gHr)"/><g transform="translate(73,14)"><circle cx="0" cy="-4" r="3.2" fill="#ff2e93"/><circle cx="4" cy="0" r="3.2" fill="#ff2e93"/><circle cx="0" cy="4" r="3.2" fill="#ff2e93"/><circle cx="-4" cy="0" r="3.2" fill="#ff2e93"/><circle r="2" fill="#fff"/></g>'+
+ '<ellipse cx="60" cy="50" rx="23" ry="27" fill="url(#gSk)"/><path d="M36 52C33 24 50 20 60 20S87 24 84 52C80 38 72 33 60 33S40 38 36 52z" fill="url(#gHr)"/><path d="M44 30q8-6 18-5" stroke="#fff" stroke-width="2" opacity=".25" fill="none" stroke-linecap="round"/>'+
+ '<path d="M44 44q6-3 12 0M64 44q6-3 12 0" stroke="#14141a" stroke-width="2.2" fill="none" stroke-linecap="round"/>'+eye(50)+eye(70)+
+ '<path d="M60 54q-3 6 0 8q2 1 3 0" stroke="#c98c62" stroke-width="1.6" fill="none" stroke-linecap="round"/><circle cx="60" cy="40" r="2.4" fill="#ff2e93"/><circle cx="44" cy="60" r="4.5" fill="#ff2e93" opacity=".25"/><circle cx="76" cy="60" r="4.5" fill="#ff2e93" opacity=".25"/>'+mo+'</g>'+
+ '<g class="'+arm+'" style="transform-box:view-box;transform-origin:84px 94px"><path d="M84 94L92 122" stroke="#f0278b" stroke-width="15" stroke-linecap="round"/><path d="M85 97l5 20" stroke="#ff7ab8" stroke-width="3" opacity=".5" stroke-linecap="round"/>'+
+ '<g class="'+fa+'" style="transform-box:view-box;transform-origin:92px 122px"><path d="M92 122L97 141" stroke="#f0278b" stroke-width="13" stroke-linecap="round"/><path d="M97 138l1.5 8" stroke="#eebb91" stroke-width="8" stroke-linecap="round"/><ellipse cx="97.5" cy="143" rx="6" ry="2" fill="none" stroke="#fff" stroke-width="2"/><ellipse cx="98" cy="147" rx="6" ry="2" fill="none" stroke="#ffc2de" stroke-width="2"/><ellipse cx="99" cy="156" rx="7" ry="9" fill="url(#gSk)"/><ellipse cx="93.5" cy="154" rx="2.8" ry="5.5" transform="rotate(18 93.5 154)" fill="#e9b184"/><path d="M96 162v3M99 163v3M102 162v3" stroke="#c98c62" stroke-width="1.4" stroke-linecap="round"/>'+(o.prop||'')+'</g></g></g></g></g>'}
+function K(x,y,s,col,act,hc){hc=hc||"url(#gHr)";
+ var m='<path d="M24 53q6 6 12 0" stroke="#a3365d" stroke-width="2.4" fill="none" stroke-linecap="round"/>',e='',f='',a='<path d="M12 84q-8 16-4 28" stroke="'+col+'" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="8" cy="114" r="5" fill="#e3a577"/>';
+ if(act==="speak"){m='<ellipse class="mo" cx="30" cy="53" rx="4.5" ry="4" fill="#7a1a3a"/>';f='<path class="sw2" d="M54 38q10 10 0 22M62 32q16 16 0 34" stroke="#ff2e93" stroke-width="3" fill="none" stroke-linecap="round"/>'}
+ if(act==="raise")e='<g class="aw" style="transform-box:view-box;transform-origin:48px 82px"><path d="M48 82q8 16 6 30" stroke="'+col+'" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="54" cy="114" r="6.5" fill="#e3a577"/></g>';
+ if(act==="read")f='<path d="M4 100l26 6 26-6v24l-26 6-26-6z" fill="#fff" stroke="#0d0d0d" stroke-width="2.5" stroke-linejoin="round"/><path d="M30 106v24M12 110l12 3M12 117l12 3M36 113l12-3M36 120l12-3" stroke="#0d0d0d" stroke-width="2"/><path d="M30 106v24" stroke="#000" stroke-width="6" opacity=".08"/>';
+ if(act==="write"){f='<rect x="-14" y="112" width="88" height="9" rx="3" fill="#0d0d0d"/><rect x="2" y="104" width="46" height="8" fill="#fff" stroke="#0d0d0d" stroke-width="2"/><path d="M8 108h26" stroke="#ff2e93" stroke-width="2"/>';e='<g class="kw" style="transform-box:view-box;transform-origin:48px 82px"><path d="M48 82q6 14-2 26" stroke="'+col+'" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="46" cy="110" r="5.5" fill="#e3a577"/><path d="M46 110l7-9" stroke="#ff2e93" stroke-width="3" stroke-linecap="round"/></g>'}
+ var eye=function(cx){return '<g class="bl"><ellipse cx="'+cx+'" cy="44" rx="3.6" ry="2.8" fill="#fff"/><g class="px" style="--d:1"><circle cx="'+cx+'" cy="44" r="2" fill="#2a1a12"/></g></g>'};
+ return '<g class="px" style="--d:10"><g transform="translate('+x+','+y+') scale('+s+')"><ellipse cx="30" cy="127" rx="28" ry="5" fill="#000" opacity=".22" filter="url(#fBl)"/><g class="br"><path d="M10 122V80q0-17 20-17t20 17v42z" fill="'+col+'"/><path d="M10 100h40v22H10z" fill="#000" opacity=".08"/><path d="M22 64l8 12 8-12z" fill="#fff" opacity=".92"/>'+a+e+
+ '<g class="hb" style="transform-box:view-box;transform-origin:30px 62px"><circle cx="12" cy="44" r="3.6" fill="#e3a577"/><circle cx="48" cy="44" r="3.6" fill="#e3a577"/><ellipse cx="30" cy="42" rx="17" ry="19" fill="url(#gSk2)"/><path d="M12 42C11 22 22 20 30 20s19 2 18 22c-3-9-8-13-18-13S15 33 12 42z" fill="'+hc+'"/><path d="M20 38q4-2 7 0M33 38q4-2 7 0" stroke="#2a1a12" stroke-width="1.6" fill="none" stroke-linecap="round"/>'+eye(24)+eye(36)+'<path d="M30 47q-1.5 3 0 4" stroke="#c98c62" stroke-width="1.3" fill="none"/><circle cx="19" cy="50" r="3.2" fill="#ff2e93" opacity=".25"/><circle cx="41" cy="50" r="3.2" fill="#ff2e93" opacity=".25"/>'+m+'</g>'+f+'</g></g></g>'}
+function SPK(x,y,z,d){return '<g transform="translate('+x+','+y+') scale('+z+')"><path class="tw" style="animation-delay:'+d+'s" d="M0-9L2.5-2.5 9 0 2.5 2.5 0 9-2.5 2.5-9 0-2.5-2.5z" fill="#ff2e93"/></g>'}
+function FT(x,y,t,z,d){return '<text class="fy" style="animation-delay:'+d+'s" x="'+x+'" y="'+y+'" font-size="'+z+'" fill="#ff2e93" opacity=".75">'+t+'</text>'}
+function BU(x,y,w,t,z,d){var h=z+24;return '<g class="px" style="--d:14"><g class="pp" style="animation-delay:'+d+'s"><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="14" fill="#fff" stroke="#0d0d0d" stroke-width="3"/><path d="M'+(x+16)+' '+(y+h)+'l-8 12 24-12" fill="#fff" stroke="#0d0d0d" stroke-width="3" stroke-linejoin="round"/><text x="'+(x+w/2)+'" y="'+(y+z+7)+'" text-anchor="middle" font-size="'+z+'" fill="#0d0d0d">'+t+'</text></g></g>'}
+function BU2(x,y,w){return '<g class="px" style="--d:14"><rect x="'+x+'" y="'+y+'" width="'+w+'" height="68" rx="16" fill="#fff" stroke="#0d0d0d" stroke-width="3"/><path d="M'+(x+18)+' '+(y+68)+'l-12 18 30-18" fill="#fff" stroke="#0d0d0d" stroke-width="3" stroke-linejoin="round"/><text class="ta" x="'+(x+w/2)+'" y="'+(y+46)+'" text-anchor="middle" font-size="36" fill="#ff2e93">नमस्ते!</text><text class="tb" x="'+(x+w/2)+'" y="'+(y+46)+'" text-anchor="middle" font-size="34" fill="#0d0d0d">Hello!</text></g>'}
+function BD(x,y,w,h,t,z){return '<g class="px" style="--d:10"><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="10" fill="#0d0d0d" stroke="#ff2e93" stroke-width="5"/><text x="'+(x+w/2)+'" y="'+(y+h/2+z*.34)+'" text-anchor="middle" font-size="'+z+'" fill="#fff" letter-spacing="6">'+t+'</text><rect class="cov" x="'+(x+3)+'" y="'+(y+3)+'" width="'+(w-6)+'" height="'+(h-6)+'" fill="#0d0d0d"/><rect x="'+(x+12)+'" y="'+(y+h+3)+'" width="'+(w-24)+'" height="6" rx="3" fill="#0d0d0d" opacity=".25"/></g>'}
+function CK(x,y,d){return '<g class="px" style="--d:12"><path class="pp" style="animation-delay:'+d+'s" d="M'+x+' '+y+'l9 10 20-24" stroke="#17803d" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>'}
+function NT(x,y,d){return '<g class="nt2" style="animation-delay:'+d+'s"><circle cx="'+x+'" cy="'+y+'" r="7" fill="#ff2e93"/><path d="M'+(x+7)+' '+y+'V'+(y-28)+'q12 4 10 14" stroke="#ff2e93" stroke-width="3.5" fill="none" stroke-linecap="round"/></g>'}
+function SH(x,y){return '<g class="px" style="--d:6"><rect x="'+x+'" y="'+(y+40)+'" width="170" height="8" rx="3" fill="#0d0d0d"/><rect x="'+(x+10)+'" y="'+y+'" width="16" height="40" fill="#ff2e93"/><rect x="'+(x+28)+'" y="'+(y+8)+'" width="14" height="32" fill="#0d0d0d"/><rect x="'+(x+44)+'" y="'+(y+2)+'" width="18" height="38" fill="#fff" stroke="#0d0d0d" stroke-width="2.5"/><rect x="'+(x+70)+'" y="'+(y+10)+'" width="14" height="30" fill="#ff8cc4"/><rect x="'+(x+90)+'" y="'+y+'" width="16" height="40" fill="#0d0d0d"/><rect x="'+(x+110)+'" y="'+(y+6)+'" width="18" height="34" fill="#ff2e93"/></g>'}
+var ST='<path d="M98 150L100 238" stroke="#0d0d0d" stroke-width="4" stroke-linecap="round"/>',
+CB='<rect x="90" y="152" width="32" height="42" rx="4" fill="#fff" stroke="#0d0d0d" stroke-width="3"/><path d="M97 166h18M97 174h18M97 182h11" stroke="#ff2e93" stroke-width="3"/>',
+CD='<rect x="88" y="150" width="36" height="46" rx="6" fill="#fff" stroke="#0d0d0d" stroke-width="3"/><text x="106" y="184" text-anchor="middle" font-size="32" fill="#ff2e93">अ</text>',
+BK='<path d="M82 154l16-6 16 6v30l-16-6-16 6z" fill="#fff" stroke="#0d0d0d" stroke-width="3" stroke-linejoin="round"/><path d="M98 148v30" stroke="#0d0d0d" stroke-width="2.5"/>',
+CH='<rect x="95" y="160" width="7" height="16" rx="2" fill="#fff" stroke="#0d0d0d" stroke-width="2"/>';
+var W0='<rect width="600" height="240" fill="url(#gWall)"/><rect width="600" height="240" fill="url(#gLight)"/><g class="px" style="--d:-4"><path class="ray" d="M470 0h70l-120 204h-80z" fill="#fff" opacity=".3"/><path class="ray" style="animation-delay:1.5s" d="M545 0h40l-90 204h-60z" fill="#fff" opacity=".22"/></g><rect y="204" width="600" height="36" fill="url(#gFl)"/><path d="M0 214h600M0 226h600" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"/><circle class="fy" cx="90" cy="40" r="6" fill="#fff" opacity=".6"/><circle class="fy" style="animation-delay:1s" cx="330" cy="26" r="4" fill="#fff" opacity=".6"/>';
+function S6(c){return ["0 0 600 240",W0+c]}
+var SCN={
+hero:function(){return ["0 0 480 400",'<rect width="480" height="400" fill="url(#gWall)"/><rect width="480" height="400" fill="url(#gLight)"/><g class="px" style="--d:-5"><path class="ray" d="M330 0h90l-150 338h-100z" fill="#fff" opacity=".3"/><path class="ray" style="animation-delay:1.5s" d="M440 0h40l-120 338h-70z" fill="#fff" opacity=".22"/></g><rect y="338" width="480" height="62" fill="url(#gFl)"/><path d="M0 356h480M0 376h480" stroke="#fff" stroke-opacity=".35" stroke-width="2"/>'+FT(30,70,"अ",52,0)+FT(420,170,"क",46,1)+FT(250,60,"म",40,2)+SPK(450,40,1.3,0)+SPK(30,190,1,1)+SPK(300,310,1,2)+T(22,86,1.35,"aw",{talk:1})+BU2(190,24,176)+K(318,176,1.3,IN,"raise")+'<g class="px" style="--d:12"><path d="M300 304l14-36h62l14 36z" fill="#fff" stroke="#0d0d0d" stroke-width="4" stroke-linejoin="round"/><rect x="284" y="304" width="122" height="14" rx="5" fill="#0d0d0d"/></g>']},
+study:function(){return S6(SH(370,34)+T(60,49,.85,"ar")+K(290,121,.85,IN,"read")+K(420,121,.8,PL,"read","#5a2a0a")+SPK(250,44,1.2,0)+SPK(540,120,1,1)+FT(205,80,"क",36,.5))},
+board:function(){return S6(BD(250,14,310,118,"अ  आ  क  ख",50)+T(50,49,.85,"ap",{prop:ST,talk:1})+K(310,128,.78,IN,"read")+K(410,128,.78,PL,"raise","#5a2a0a")+SPK(220,30,1,0))},
+test:function(){return S6('<g class="sp" style="animation-duration:6s"><circle cx="80" cy="56" r="22" fill="none"/><path d="M80 56V40" stroke="#ff2e93" stroke-width="4" stroke-linecap="round"/></g><circle cx="80" cy="56" r="24" fill="none" stroke="#0d0d0d" stroke-width="4"/>'+K(240,115,.9,IN,"write")+CK(340,76,0)+CK(340,106,1.2)+CK(340,136,2.4)+BU(300,16,86,"A+",30,2)+T(450,49,.85,"ah",{prop:CB}))},
+speak:function(){return S6(T(60,49,.85,"ah",{prop:CD,talk:1})+BU(168,18,92,"अ",36,0)+K(380,121,.9,IN,"speak")+BU(450,30,130,"अनार",30,.8)+SPK(300,60,1,0)+SPK(300,170,.8,1))},
+poem:function(){return S6(T(110,49,.85,"ah",{prop:BK,talk:1})+NT(300,150,0)+NT(340,170,1.3)+NT(390,140,2.6)+K(430,121,.8,IN,"idle")+K(510,121,.8,PL,"idle","#5a2a0a")+SPK(260,36,1.2,0)+SPK(560,100,1,1))},
+notes:function(){return S6(BD(250,14,320,120,"१  २  ३  ४  ५",46)+T(60,49,.85,"ak",{prop:CH,talk:1})+'<g class="px" style="--d:12"><rect x="420" y="172" width="130" height="14" rx="4" fill="#0d0d0d"/><rect x="440" y="150" width="76" height="22" rx="3" fill="#fff" stroke="#0d0d0d" stroke-width="3"/><path d="M450 158h54M450 165h36" stroke="#ff2e93" stroke-width="3"/></g>'+SPK(230,40,1,0))},
+read:function(){return S6(SH(40,60)+K(255,83,1.1,IN,"read")+'<g class="px" style="--d:14"><circle cx="285" cy="40" r="16" fill="#fff" stroke="#0d0d0d" stroke-width="3"/><rect x="278" y="55" width="14" height="8" rx="2" fill="#0d0d0d"/><path class="tw" d="M285 8v-8M257 20l-6-6M313 20l6-6M250 42h-8M320 42h8" stroke="#ff2e93" stroke-width="3" stroke-linecap="round"/></g>'+T(440,63,.78,"ar")+SPK(380,60,1.2,0)+SPK(200,40,1,1))},
+cal:function(){var g='';for(var j=0;j<4;j++){g+='<rect class="gr" style="animation-delay:'+(j*1.1)+'s" x="190" y="'+(78+j*30)+'" width="220" height="22" rx="11" fill="#ff2e93" opacity=".3"/>';for(var i=0;i<7;i++)g+='<circle cx="'+(205+i*30)+'" cy="'+(89+j*30)+'" r="6" fill="#0d0d0d"/>'}
+ return S6('<g class="px" style="--d:8"><rect x="170" y="18" width="260" height="186" rx="14" fill="#fff" stroke="#0d0d0d" stroke-width="4"/><path d="M170 32a14 14 0 0 1 14-14h232a14 14 0 0 1 14 14v26H170z" fill="#ff2e93"/><text x="300" y="47" text-anchor="middle" font-size="20" fill="#fff">30 DAYS</text>'+g+'</g>'+T(30,49,.85,"aw")+'<g class="pp" style="animation-delay:3s"><path d="M470 80h40v22q0 22-20 26-20-4-20-26zM490 128v22M474 150h32" stroke="#0d0d0d" stroke-width="5" fill="#ff2e93" stroke-linejoin="round" stroke-linecap="round"/></g>'+K(530,121,.7,IN,"raise")+SPK(450,40,1,0))},
+globe:function(){var L='<path d="M-60 100q20-34 56-12t26 44-44 28-40-18zM60 70q22-20 44 0t6 36-40 8z" fill="#ff2e93"/>',ms='';
+ return S6('<defs><clipPath id="gc"><circle cx="300" cy="120" r="82"/></clipPath></defs><circle cx="300" cy="120" r="82" fill="#0d0d0d"/><g clip-path="url(#gc)"><g class="ld"><g transform="translate(260,20)">'+L+'</g><g transform="translate(500,20)">'+L+'</g><g transform="translate(740,20)">'+L+'</g></g><ellipse class="mer" cx="300" cy="120" rx="82" ry="82" fill="none" stroke="#fff" stroke-width="1.5" opacity=".3"/><ellipse cx="300" cy="120" rx="82" ry="26" fill="none" stroke="#fff" stroke-width="1.5" opacity=".25"/></g><circle cx="300" cy="120" r="82" fill="none" stroke="#ff2e93" stroke-width="5"/>'+'<circle class="rg" cx="214" cy="80" r="8" fill="none" stroke="#0d0d0d" stroke-width="3"/><circle class="rg" style="animation-delay:.6s" cx="388" cy="96" r="8" fill="none" stroke="#0d0d0d" stroke-width="3"/><circle class="rg" style="animation-delay:1.2s" cx="262" cy="190" r="8" fill="none" stroke="#0d0d0d" stroke-width="3"/><circle class="rg" style="animation-delay:1.8s" cx="364" cy="176" r="8" fill="none" stroke="#0d0d0d" stroke-width="3"/>'+BU(120,18,110,"नमस्ते",26,0)+BU(400,14,100,"Hello",26,1.2)+BU(130,150,100,"Hola",26,2.4)+BU(430,150,110,"Hallo",26,3.6)+T(10,128,.5,"aw")+K(540,150,.5,IN,"raise"))},
+clock:function(){var t='';for(var i=0;i<12;i++)t+='<path d="M230 44v10" stroke="#0d0d0d" stroke-width="4" stroke-linecap="round" transform="rotate('+(i*30)+' 230 120)"/>';
+ return S6('<circle cx="230" cy="120" r="84" fill="#fff" stroke="#0d0d0d" stroke-width="5"/>'+t+'<g class="sp" style="animation-duration:48s"><circle cx="230" cy="120" r="50" fill="none"/><path d="M230 120V84" stroke="#0d0d0d" stroke-width="6" stroke-linecap="round"/></g><g class="sp" style="animation-duration:6s"><circle cx="230" cy="120" r="66" fill="none"/><path d="M230 120V64" stroke="#ff2e93" stroke-width="4" stroke-linecap="round"/></g><circle cx="230" cy="120" r="6" fill="#0d0d0d"/><g class="sp" style="animation-duration:16s"><circle cx="420" cy="205" r="92" fill="none"/><circle cx="420" cy="113" r="18" fill="#ff2e93"/><circle cx="420" cy="297" r="18" fill="#0d0d0d"/><circle cx="430" cy="291" r="14" fill="#ffe6f2"/></g>'+'<path d="M330 204h180" stroke="#0d0d0d" stroke-width="4" stroke-linecap="round"/>'+T(520,120,.5,"aw")+SPK(110,40,1,0))},
+film:function(){return S6('<g class="px" style="--d:8"><rect x="190" y="20" width="220" height="134" rx="12" fill="#0d0d0d"/><rect x="200" y="30" width="200" height="114" rx="6" fill="#ffe6f2"/><rect x="160" y="156" width="280" height="14" rx="6" fill="#0d0d0d"/></g>'+T(222,42,.5,"aw",{talk:1})+'<g class="pp" style="animation-delay:.3s"><circle cx="352" cy="88" r="24" fill="#ff2e93"/><path d="M345 76l20 12-20 12z" fill="#fff"/></g><circle class="bl" cx="214" cy="44" r="5" fill="#ff2e93"/><text x="224" y="49" font-size="12" fill="#0d0d0d">REC</text>'+K(80,121,.8,IN,"raise")+K(480,121,.8,PL,"raise","#5a2a0a")+SPK(130,50,1,0))},
+faq:function(){return S6(T(60,49,.85,"aw",{talk:1})+BU(190,24,70,"?",34,0)+BU(280,56,70,"?",34,1.2)+BU(350,14,100,"हाँ!",30,2.4)+K(460,121,.85,IN,"raise")+SPK(250,150,1,0))},
+book:function(){return S6(T(60,49,.85,"aw")+K(450,121,.85,IN,"raise")+'<g class="fly px" style="--d:10"><rect x="230" y="104" width="46" height="32" rx="4" fill="#fff" stroke="#0d0d0d" stroke-width="3"/><path d="M230 106l23 17 23-17" stroke="#0d0d0d" stroke-width="3" fill="none"/></g>'+BU(240,22,140,"Free Demo",22,0)+SPK(320,170,1.2,0)+SPK(200,60,1,1)+SPK(400,70,1,2))}
+};
+/*ENDSCN*/
+
+var snAll=document.querySelectorAll(".sn");
+snAll.forEach(function(el){
+ var f=SCN[el.dataset.s];if(!f)return;var o=f();
+ el.classList.add("off");
+ el.innerHTML='<div class="si"><svg viewBox="'+o[0]+'" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Animated illustration of the Hindi teacher">'+o[1]+'</svg></div>';
+ el.addEventListener("pointermove",function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.setProperty("--mx",x*2);el.style.setProperty("--my",y*2);el.style.setProperty("--ry",(x*12)+"deg");el.style.setProperty("--rx",(-y*9)+"deg")});
+ el.addEventListener("pointerleave",function(){["--mx","--my","--ry","--rx"].forEach(function(p){el.style.removeProperty(p)})});
+});
+if("IntersectionObserver" in window){var io2=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle("off",!e.isIntersecting)})},{threshold:.1});snAll.forEach(function(el){io2.observe(el)})}else snAll.forEach(function(el){el.classList.remove("off")});
+
+var PO=[["सूरज उगा, सवेरा आया,","suraj uga, savera aaya,","The sun rose, the morning came,"],["चिड़िया ने गीत सुनाया।","chidiya ne geet sunaya.","The little bird sang a song."],["अ से अनार, आ से आम,","a se anaar, aa se aam,","A is for pomegranate, Aa is for mango,"],["हिंदी सीखना है आसान।","Hindi seekhna hai aasaan.","Learning Hindi is easy."]];
+var pl=document.getElementById("pl"),pb=document.getElementById("pbtn"),pt=null,ph="";
+PO.forEach(function(x,i){ph+="<div class='pln' data-i='"+i+"'><b>"+x[0]+"</b><span class='pm'>"+x[1]+"<br>"+x[2]+"</span></div>"});
+pl.innerHTML=ph;
+function plHi(i){pl.querySelectorAll(".pln").forEach(function(e,j){e.classList.toggle("on",j===i)})}
+function plStop(){if(pt)clearTimeout(pt);pt=null;try{speechSynthesis.cancel()}catch(e){}document.body.classList.remove("talking");plHi(-1);pb.textContent="Play poem"}
+function plPlay(i){if(i>=PO.length){plStop();return}plHi(i);say(PO[i][0]);pt=setTimeout(function(){plPlay(i+1)},3400)}
+pb.onclick=function(){if(pt){plStop()}else{pb.textContent="Stop";plPlay(0)}};
+document.getElementById("pmean").onclick=function(){pl.classList.toggle("sm");this.textContent=pl.classList.contains("sm")?"Hide roman + English":"Show roman + English"};
+pl.addEventListener("click",function(e){var l=e.target.closest(".pln");if(l){if(pt)plStop();plHi(+l.dataset.i);say(PO[+l.dataset.i][0])}});
+
+document.getElementById("go").onclick=function(){
+ var g=function(i){return document.getElementById(i).value.trim()},fm=document.getElementById("fm");
+ if(!g("n")){fm.textContent="Please enter the parent's name.";document.getElementById("n").focus();return}
+ if(/X/.test(WA)){fm.textContent="Demo mode: WhatsApp number abhi set nahi hai. Number daalne ke baad ye seedha WhatsApp kholega.";return}
+ fm.textContent="";
+ var u=wl("Hello! I'd like to book a free Hindi demo class.\nParent: "+g("n")+"\nChild's age: "+g("a")+"\nLocation: "+g("c")+"\nHindi level: "+g("l"));
+ var w=window.open(u,"_blank");if(!w)location.href=u;
+};
+</script>
+</body>
+</html>
